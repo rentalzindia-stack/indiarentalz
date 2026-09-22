@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <!-- ========== META & SEO ========== -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="googlebot" content="index, follow" />
 
-  <title>India Rentalz – Rent Anything Across India | indiarentalz.com</title>
-  <meta name="description" content="IndiaRentalz.com is your trusted rental marketplace. Rent bikes, cars, homes, electronics & more across India. Available globally. Explore now!" />
-  <meta name="keywords" content="India rentals, rent in India, bike rental India, car rental India, home rental India, indiarentalz, rental marketplace India" />
+  <title>IndiaRentalz – Rent Laptop, MacBook & Computer Across India</title>
+  <meta name="description" content="Rent laptops, MacBooks, and computers across India at the best prices. Daily, weekly & monthly plans. Verified devices. Free delivery. Visit indiarentalz.com today!" />
+  <meta name="keywords" content="rent laptop India, laptop on rent, MacBook on rent India, computer on rent, laptop rental Delhi, laptop rental Mumbai, laptop rental Bangalore, indiarentalz, rent MacBook India" />
   <meta name="author" content="IndiaRentalz" />
 
   <!-- Canonical -->
@@ -18,14 +19,14 @@
   <!-- Open Graph -->
   <meta property="og:type"        content="website" />
   <meta property="og:url"         content="https://indiarentalz.com" />
-  <meta property="og:title"       content="India Rentalz – Rent Anything Across India" />
-  <meta property="og:description" content="Your #1 rental marketplace in India. Rent bikes, cars, homes, gadgets & more. Trusted by thousands." />
+  <meta property="og:title"       content="IndiaRentalz – Rent Laptop, MacBook & Computer Across India" />
+  <meta property="og:description" content="India's #1 platform to rent laptops, MacBooks & computers. Daily, weekly & monthly plans. Free delivery across India." />
   <meta property="og:image"       content="https://indiarentalz.com/og-image.jpg" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card"        content="summary_large_image" />
-  <meta name="twitter:title"       content="India Rentalz – Rent Anything Across India" />
-  <meta name="twitter:description" content="Explore thousands of rental listings across India. Verified. Affordable. Easy." />
+  <meta name="twitter:title"       content="IndiaRentalz – Rent Laptop, MacBook & Computer Across India" />
+  <meta name="twitter:description" content="Rent verified laptops, MacBooks & computers anywhere in India. Best prices, free delivery, flexible plans." />
   <meta name="twitter:image"       content="https://indiarentalz.com/og-image.jpg" />
 
   <!-- Schema.org Structured Data -->
@@ -36,7 +37,8 @@
     "name": "IndiaRentalz",
     "url": "https://indiarentalz.com",
     "logo": "https://indiarentalz.com/logo.png",
-    "description": "India's leading online rental marketplace for vehicles, homes, electronics and more.",
+    "description": "India's leading platform to rent laptops, MacBooks and computers across all major cities.",
+    "areaServed": "India",
     "sameAs": [
       "https://www.google.com/url?q=https%3A%2F%2Findiarentalz.com",
       "https://www.google.co.in/url?q=https%3A%2F%2Findiarentalz.com",
@@ -62,31 +64,62 @@
   }
   </script>
 
+  <!-- Product Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Laptop & Computer Rental",
+    "provider": {
+      "@type": "Organization",
+      "name": "IndiaRentalz",
+      "url": "https://indiarentalz.com"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "India"
+    },
+    "description": "Rent laptops, MacBooks, and desktop computers across India with daily, weekly, and monthly plans.",
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
+
   <!-- ========== STYLES ========== -->
   <style>
+
     /* ---------- Reset & Base ---------- */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --primary:   #FF6B00;
-      --primary-d: #e05e00;
-      --dark:      #1a1a2e;
-      --mid:       #16213e;
-      --light:     #f5f7fa;
-      --white:     #ffffff;
-      --text:      #333;
-      --muted:     #666;
-      --radius:    12px;
-      --shadow:    0 4px 24px rgba(0,0,0,0.10);
+      --primary:    #0057FF;
+      --primary-d:  #0041cc;
+      --primary-l:  #e8f0ff;
+      --accent:     #00C6FF;
+      --dark:       #0a0e1a;
+      --mid:        #111827;
+      --light:      #f4f7ff;
+      --white:      #ffffff;
+      --text:       #1e2532;
+      --muted:      #6b7280;
+      --border:     #e5e9f2;
+      --radius:     14px;
+      --radius-sm:  8px;
+      --shadow:     0 4px 28px rgba(0,87,255,0.09);
+      --shadow-md:  0 8px 40px rgba(0,87,255,0.14);
     }
 
     html { scroll-behavior: smooth; }
 
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
       color: var(--text);
       background: var(--white);
       line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
     }
 
     a { text-decoration: none; color: inherit; }
@@ -99,72 +132,101 @@
       margin: 0 auto;
     }
 
-    /* ---------- NAV ---------- */
+    /* ---------- SCROLLBAR ---------- */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--light); }
+    ::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 10px; }
+
+    /* =========================================
+       NAVBAR
+    ========================================= */
     nav {
       background: var(--dark);
       position: sticky;
       top: 0;
-      z-index: 999;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
     }
 
     .nav-inner {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 18px 0;
+      padding: 17px 0;
     }
 
     .logo {
-      font-size: 1.7rem;
-      font-weight: 800;
+      font-size: 1.6rem;
+      font-weight: 900;
       color: var(--white);
       letter-spacing: -0.5px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
 
-    .logo span { color: var(--primary); }
+    .logo-icon {
+      background: var(--primary);
+      color: var(--white);
+      width: 36px; height: 36px;
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+    }
+
+    .logo span { color: var(--accent); }
 
     .nav-links {
       display: flex;
-      gap: 28px;
+      align-items: center;
+      gap: 30px;
     }
 
     .nav-links a {
-      color: #ccc;
+      color: #9ca3af;
       font-weight: 500;
-      font-size: 0.95rem;
+      font-size: 0.93rem;
       transition: color 0.25s;
     }
 
-    .nav-links a:hover { color: var(--primary); }
+    .nav-links a:hover { color: var(--white); }
 
     .nav-cta {
-      background: var(--primary);
+      background: var(--primary) !important;
       color: var(--white) !important;
-      padding: 10px 22px;
+      padding: 10px 24px;
       border-radius: 50px;
       font-weight: 700 !important;
-      transition: background 0.25s !important;
+      font-size: 0.9rem !important;
+      transition: background 0.25s, transform 0.2s !important;
+      box-shadow: 0 4px 16px rgba(0,87,255,0.35);
     }
 
-    .nav-cta:hover { background: var(--primary-d) !important; }
+    .nav-cta:hover {
+      background: var(--primary-d) !important;
+      transform: translateY(-1px);
+    }
 
-    /* ---------- HERO ---------- */
+    /* =========================================
+       HERO
+    ========================================= */
     .hero {
-      background: linear-gradient(135deg, var(--dark) 0%, var(--mid) 60%, #0f3460 100%);
-      padding: 100px 0 80px;
-      text-align: center;
+      background: linear-gradient(135deg, var(--dark) 0%, #0d1433 55%, #0a192f 100%);
+      padding: 110px 0 90px;
       color: var(--white);
       position: relative;
       overflow: hidden;
     }
 
+    /* Glowing blobs */
     .hero::before {
       content: '';
       position: absolute;
-      width: 600px; height: 600px;
-      background: radial-gradient(circle, rgba(255,107,0,0.15) 0%, transparent 70%);
-      top: -100px; left: -100px;
+      width: 700px; height: 700px;
+      background: radial-gradient(circle, rgba(0,87,255,0.18) 0%, transparent 65%);
+      top: -200px; left: -150px;
       pointer-events: none;
     }
 
@@ -172,180 +234,515 @@
       content: '';
       position: absolute;
       width: 500px; height: 500px;
-      background: radial-gradient(circle, rgba(255,107,0,0.10) 0%, transparent 70%);
-      bottom: -100px; right: -100px;
+      background: radial-gradient(circle, rgba(0,198,255,0.12) 0%, transparent 65%);
+      bottom: -120px; right: -80px;
       pointer-events: none;
     }
 
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
     .hero-badge {
-      display: inline-block;
-      background: rgba(255,107,0,0.18);
-      color: var(--primary);
-      border: 1px solid rgba(255,107,0,0.4);
-      padding: 6px 18px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0,87,255,0.18);
+      color: var(--accent);
+      border: 1px solid rgba(0,198,255,0.3);
+      padding: 7px 18px;
       border-radius: 50px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      margin-bottom: 22px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      margin-bottom: 24px;
       letter-spacing: 0.5px;
+      text-transform: uppercase;
     }
 
     .hero h1 {
-      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      font-size: clamp(2rem, 4.2vw, 3.4rem);
       font-weight: 900;
-      line-height: 1.2;
+      line-height: 1.18;
       margin-bottom: 22px;
     }
 
-    .hero h1 span { color: var(--primary); }
+    .hero h1 .highlight {
+      background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
 
     .hero p {
-      font-size: 1.15rem;
-      color: #b0b8cc;
-      max-width: 600px;
-      margin: 0 auto 36px;
+      font-size: 1.08rem;
+      color: #94a3b8;
+      margin-bottom: 38px;
+      line-height: 1.8;
     }
 
     .hero-btns {
       display: flex;
       gap: 14px;
-      justify-content: center;
       flex-wrap: wrap;
     }
 
     .btn-primary {
       background: var(--primary);
       color: var(--white);
-      padding: 14px 34px;
+      padding: 14px 32px;
       border-radius: 50px;
       font-weight: 700;
-      font-size: 1rem;
+      font-size: 0.97rem;
       transition: all 0.25s;
-      box-shadow: 0 4px 20px rgba(255,107,0,0.35);
+      box-shadow: 0 4px 24px rgba(0,87,255,0.4);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
     }
 
-    .btn-primary:hover { background: var(--primary-d); transform: translateY(-2px); }
+    .btn-primary:hover {
+      background: var(--primary-d);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(0,87,255,0.5);
+    }
 
-    .btn-outline {
-      border: 2px solid rgba(255,255,255,0.35);
+    .btn-ghost {
+      border: 2px solid rgba(255,255,255,0.2);
       color: var(--white);
-      padding: 14px 34px;
+      padding: 14px 32px;
       border-radius: 50px;
       font-weight: 600;
-      font-size: 1rem;
+      font-size: 0.97rem;
       transition: all 0.25s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
     }
 
-    .btn-outline:hover { border-color: var(--primary); color: var(--primary); }
+    .btn-ghost:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
 
-    /* ---------- STATS ---------- */
+    /* Hero Visual Box */
+    .hero-visual {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .device-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s;
+    }
+
+    .device-card:hover {
+      background: rgba(0,87,255,0.12);
+      border-color: rgba(0,87,255,0.4);
+      transform: translateX(6px);
+    }
+
+    .device-emoji { font-size: 2.4rem; }
+
+    .device-info strong {
+      display: block;
+      font-size: 1rem;
+      color: var(--white);
+      font-weight: 700;
+      margin-bottom: 3px;
+    }
+
+    .device-info span {
+      font-size: 0.82rem;
+      color: #64748b;
+    }
+
+    .device-price {
+      margin-left: auto;
+      text-align: right;
+    }
+
+    .device-price strong {
+      display: block;
+      color: var(--accent);
+      font-size: 1rem;
+      font-weight: 800;
+    }
+
+    .device-price span {
+      font-size: 0.75rem;
+      color: #64748b;
+    }
+
+    /* =========================================
+       TRUST BAR
+    ========================================= */
+    .trust-bar {
+      background: var(--primary);
+      padding: 16px 0;
+      overflow: hidden;
+    }
+
+    .trust-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255,255,255,0.92);
+      font-size: 0.88rem;
+      font-weight: 600;
+    }
+
+    .trust-item span:first-child { font-size: 1.1rem; }
+
+    /* =========================================
+       STATS
+    ========================================= */
     .stats {
       background: var(--light);
-      padding: 50px 0;
+      padding: 55px 0;
+      border-bottom: 1px solid var(--border);
     }
 
     .stats-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
       text-align: center;
     }
 
+    .stat-item {
+      padding: 24px 16px;
+      background: var(--white);
+      border-radius: var(--radius);
+      border: 1.5px solid var(--border);
+      transition: box-shadow 0.3s;
+    }
+
+    .stat-item:hover { box-shadow: var(--shadow); }
+
     .stat-item h3 {
-      font-size: 2.2rem;
-      font-weight: 800;
+      font-size: 2rem;
+      font-weight: 900;
       color: var(--primary);
+      line-height: 1;
+      margin-bottom: 8px;
     }
 
     .stat-item p {
       color: var(--muted);
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       font-weight: 500;
     }
 
-    /* ---------- CATEGORIES ---------- */
-    .section {
-      padding: 80px 0;
-    }
+    /* =========================================
+       SHARED SECTION STYLES
+    ========================================= */
+    .section { padding: 88px 0; }
+    .section-alt { background: var(--light); padding: 88px 0; }
 
     .section-header {
       text-align: center;
-      margin-bottom: 50px;
+      margin-bottom: 54px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: var(--primary-l);
+      color: var(--primary);
+      padding: 5px 16px;
+      border-radius: 50px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-bottom: 14px;
     }
 
     .section-header h2 {
-      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
-      font-weight: 800;
+      font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+      font-weight: 900;
       color: var(--dark);
-      margin-bottom: 12px;
+      margin-bottom: 14px;
+      line-height: 1.25;
     }
 
     .section-header p {
       color: var(--muted);
       font-size: 1rem;
-      max-width: 540px;
+      max-width: 560px;
       margin: 0 auto;
     }
 
-    .tag {
-      display: inline-block;
-      background: rgba(255,107,0,0.1);
-      color: var(--primary);
-      padding: 4px 14px;
-      border-radius: 50px;
-      font-size: 0.82rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 12px;
-    }
-
-    .categories-grid {
+    /* =========================================
+       DEVICE CATEGORIES
+    ========================================= */
+    .devices-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
     }
 
-    .cat-card {
+    .product-card {
       background: var(--white);
-      border: 1.5px solid #eee;
+      border: 1.5px solid var(--border);
       border-radius: var(--radius);
-      padding: 32px 20px;
-      text-align: center;
+      overflow: hidden;
       transition: all 0.3s;
-      cursor: pointer;
+      display: flex;
+      flex-direction: column;
     }
 
-    .cat-card:hover {
+    .product-card:hover {
       border-color: var(--primary);
-      box-shadow: 0 8px 30px rgba(255,107,0,0.15);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-6px);
+    }
+
+    .product-top {
+      background: linear-gradient(135deg, var(--primary-l) 0%, #dce8ff 100%);
+      padding: 36px 20px;
+      text-align: center;
+      font-size: 4rem;
+      position: relative;
+    }
+
+    .product-badge {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: var(--primary);
+      color: var(--white);
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 50px;
+    }
+
+    .product-body { padding: 24px; flex: 1; }
+
+    .product-body h3 {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--dark);
+      margin-bottom: 8px;
+    }
+
+    .product-body p {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin-bottom: 18px;
+      line-height: 1.6;
+    }
+
+    .product-specs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .spec-tag {
+      background: var(--light);
+      color: var(--text);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 50px;
+      border: 1px solid var(--border);
+    }
+
+    .product-price {
+      display: flex;
+      align-items: baseline;
+      gap: 4px;
+      margin-bottom: 18px;
+    }
+
+    .product-price .from {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .product-price .amount {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: var(--primary);
+    }
+
+    .product-price .per {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .btn-card {
+      display: block;
+      text-align: center;
+      background: var(--primary);
+      color: var(--white);
+      padding: 12px;
+      border-radius: var(--radius-sm);
+      font-weight: 700;
+      font-size: 0.9rem;
+      transition: background 0.25s;
+    }
+
+    .btn-card:hover { background: var(--primary-d); }
+
+    /* =========================================
+       PLANS / PRICING
+    ========================================= */
+    .plans-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+
+    .plan-card {
+      background: var(--white);
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px 28px;
+      text-align: center;
+      position: relative;
+      transition: all 0.3s;
+    }
+
+    .plan-card:hover {
+      border-color: var(--primary);
+      box-shadow: var(--shadow-md);
       transform: translateY(-4px);
     }
 
-    .cat-icon {
-      font-size: 2.8rem;
-      margin-bottom: 14px;
+    .plan-card.featured {
+      border-color: var(--primary);
+      background: linear-gradient(160deg, #f0f5ff 0%, #e8f0ff 100%);
     }
 
-    .cat-card h3 {
-      font-size: 1rem;
-      font-weight: 700;
+    .plan-featured-badge {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--primary);
+      color: var(--white);
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 5px 18px;
+      border-radius: 50px;
+      white-space: nowrap;
+    }
+
+    .plan-icon { font-size: 2.4rem; margin-bottom: 16px; }
+
+    .plan-card h3 {
+      font-size: 1.1rem;
+      font-weight: 800;
       color: var(--dark);
+      margin-bottom: 6px;
     }
 
-    .cat-card p {
+    .plan-desc {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 22px;
+    }
+
+    .plan-price .amount {
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: var(--primary);
+      line-height: 1;
+    }
+
+    .plan-price .per {
       font-size: 0.82rem;
       color: var(--muted);
-      margin-top: 6px;
+      margin-bottom: 22px;
+      display: block;
     }
 
-    /* ---------- FEATURES ---------- */
-    .features { background: var(--light); padding: 80px 0; }
+    .plan-features {
+      text-align: left;
+      margin-bottom: 28px;
+    }
 
+    .plan-features li {
+      font-size: 0.88rem;
+      color: var(--text);
+      padding: 7px 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+
+    .plan-features li:last-child { border-bottom: none; }
+
+    .check { color: #22c55e; font-weight: 900; font-size: 1rem; }
+
+    /* =========================================
+       CITIES
+    ========================================= */
+    .cities-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+      gap: 14px;
+    }
+
+    .city-chip {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 14px 18px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--dark);
+      transition: all 0.25s;
+      cursor: pointer;
+    }
+
+    .city-chip:hover {
+      border-color: var(--primary);
+      background: var(--primary-l);
+      color: var(--primary);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 16px rgba(0,87,255,0.1);
+    }
+
+    .city-chip .city-icon { font-size: 1.2rem; }
+
+    /* =========================================
+       WHY CHOOSE US
+    ========================================= */
     .features-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 28px;
+      gap: 24px;
     }
 
     .feat-card {
@@ -353,55 +750,113 @@
       border-radius: var(--radius);
       padding: 32px 28px;
       box-shadow: var(--shadow);
-      border-top: 4px solid var(--primary);
-      transition: transform 0.3s;
+      border-left: 4px solid var(--primary);
+      transition: transform 0.3s, box-shadow 0.3s;
     }
 
-    .feat-card:hover { transform: translateY(-4px); }
+    .feat-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
 
-    .feat-icon { font-size: 2.2rem; margin-bottom: 16px; }
+    .feat-icon {
+      width: 52px; height: 52px;
+      background: var(--primary-l);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      margin-bottom: 18px;
+    }
 
     .feat-card h3 {
-      font-size: 1.1rem;
-      font-weight: 700;
+      font-size: 1.05rem;
+      font-weight: 800;
       color: var(--dark);
       margin-bottom: 10px;
     }
 
-    .feat-card p { color: var(--muted); font-size: 0.93rem; }
+    .feat-card p { color: var(--muted); font-size: 0.9rem; line-height: 1.7; }
 
-    /* ---------- GLOBAL REACH (BACKLINKS) ---------- */
-    .global { padding: 80px 0; }
+    /* =========================================
+       HOW IT WORKS
+    ========================================= */
+    .steps-wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      position: relative;
+    }
 
+    .step-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 36px 26px;
+      text-align: center;
+      box-shadow: var(--shadow);
+      position: relative;
+      transition: transform 0.3s;
+    }
+
+    .step-card:hover { transform: translateY(-4px); }
+
+    .step-num {
+      width: 54px; height: 54px;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+      color: var(--white);
+      border-radius: 50%;
+      font-size: 1.3rem;
+      font-weight: 900;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      box-shadow: 0 4px 16px rgba(0,87,255,0.35);
+    }
+
+    .step-card h3 {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--dark);
+      margin-bottom: 10px;
+    }
+
+    .step-card p { font-size: 0.88rem; color: var(--muted); }
+
+    /* =========================================
+       GLOBAL REACH — 20 BACKLINKS
+    ========================================= */
     .regions-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-      gap: 16px;
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      gap: 14px;
     }
 
     .region-card {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 14px;
       background: var(--white);
-      border: 1.5px solid #e8e8e8;
-      border-radius: var(--radius);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-sm);
       padding: 16px 20px;
       transition: all 0.25s;
+      cursor: pointer;
     }
 
     .region-card:hover {
       border-color: var(--primary);
-      background: rgba(255,107,0,0.04);
-      transform: translateX(4px);
-      box-shadow: 0 4px 16px rgba(255,107,0,0.1);
+      background: var(--primary-l);
+      transform: translateX(5px);
+      box-shadow: 0 4px 18px rgba(0,87,255,0.1);
     }
 
-    .region-flag { font-size: 1.8rem; }
+    .region-flag { font-size: 1.9rem; }
 
     .region-info strong {
       display: block;
-      font-size: 0.95rem;
+      font-size: 0.92rem;
       color: var(--dark);
       font-weight: 700;
     }
@@ -412,573 +867,1124 @@
       font-weight: 600;
     }
 
-    /* ---------- HOW IT WORKS ---------- */
-    .how { background: var(--light); padding: 80px 0; }
-
-    .steps-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 28px;
-      counter-reset: steps;
+    .region-arrow {
+      margin-left: auto;
+      color: var(--primary);
+      font-size: 1rem;
+      opacity: 0;
+      transition: opacity 0.2s;
     }
 
-    .step-card {
-      text-align: center;
-      padding: 36px 24px;
+    .region-card:hover .region-arrow { opacity: 1; }
+
+    /* =========================================
+       FAQ
+    ========================================= */
+    .faq-list { max-width: 760px; margin: 0 auto; }
+
+    .faq-item {
       background: var(--white);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      position: relative;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-sm);
+      margin-bottom: 14px;
+      overflow: hidden;
     }
 
-    .step-num {
-      width: 52px; height: 52px;
-      background: var(--primary);
-      color: var(--white);
-      border-radius: 50%;
-      font-size: 1.4rem;
-      font-weight: 800;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 20px;
-    }
-
-    .step-card h3 {
-      font-size: 1.05rem;
+    .faq-q {
+      padding: 20px 24px;
       font-weight: 700;
+      font-size: 0.97rem;
       color: var(--dark);
-      margin-bottom: 10px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
     }
 
-    .step-card p { font-size: 0.9rem; color: var(--muted); }
+    .faq-q span { color: var(--primary); font-size: 1.3rem; }
 
-    /* ---------- CTA BANNER ---------- */
+    .faq-a {
+      padding: 0 24px 20px;
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.8;
+      border-top: 1px solid var(--border);
+    }
+
+    /* =========================================
+       CTA BANNER
+    ========================================= */
     .cta-banner {
-      background: linear-gradient(135deg, var(--primary) 0%, #ff9a3c 100%);
-      padding: 72px 0;
+      background: linear-gradient(135deg, var(--dark) 0%, #0d1b4b 50%, #0a1128 100%);
+      padding: 90px 0;
       text-align: center;
       color: var(--white);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-banner::before {
+      content: '';
+      position: absolute;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(0,87,255,0.2) 0%, transparent 70%);
+      top: -200px; left: 50%;
+      transform: translateX(-50%);
+      pointer-events: none;
     }
 
     .cta-banner h2 {
       font-size: clamp(1.8rem, 3.5vw, 2.6rem);
-      font-weight: 800;
-      margin-bottom: 16px;
+      font-weight: 900;
+      margin-bottom: 18px;
+      position: relative;
     }
 
     .cta-banner p {
-      font-size: 1.1rem;
-      opacity: 0.92;
-      margin-bottom: 32px;
+      font-size: 1.05rem;
+      color: #94a3b8;
+      margin-bottom: 36px;
       max-width: 520px;
       margin-left: auto;
       margin-right: auto;
+      position: relative;
     }
 
     .btn-white {
       background: var(--white);
       color: var(--primary);
-      padding: 14px 38px;
+      padding: 15px 42px;
       border-radius: 50px;
-      font-weight: 800;
+      font-weight: 900;
       font-size: 1rem;
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
       transition: all 0.25s;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      box-shadow: 0 4px 24px rgba(255,255,255,0.15);
+      position: relative;
     }
 
-    .btn-white:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(0,0,0,0.2); }
+    .btn-white:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 32px rgba(255,255,255,0.2);
+    }
 
-    /* ---------- FOOTER ---------- */
+    /* =========================================
+       FOOTER
+    ========================================= */
     footer {
       background: var(--dark);
-      color: #aaa;
-      padding: 60px 0 28px;
+      color: #6b7280;
+      padding: 64px 0 28px;
+      border-top: 1px solid rgba(255,255,255,0.05);
     }
 
     .footer-grid {
       display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr;
-      gap: 36px;
-      margin-bottom: 40px;
+      grid-template-columns: 2.2fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 50px;
     }
 
-    .footer-brand .logo { margin-bottom: 14px; }
+    .footer-logo {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
 
-    .footer-brand p { font-size: 0.88rem; line-height: 1.8; }
+    .footer-logo span { color: var(--accent); }
+
+    .footer-brand p {
+      font-size: 0.87rem;
+      line-height: 1.85;
+      color: #6b7280;
+      margin-bottom: 20px;
+    }
+
+    .footer-contact {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .footer-contact a {
+      color: #9ca3af;
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.2s;
+    }
+
+    .footer-contact a:hover { color: var(--accent); }
 
     .footer-col h4 {
       color: var(--white);
-      font-size: 0.95rem;
-      font-weight: 700;
-      margin-bottom: 16px;
+      font-size: 0.88rem;
+      font-weight: 800;
+      margin-bottom: 18px;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.8px;
     }
 
-    .footer-col ul li { margin-bottom: 10px; }
+    .footer-col ul li { margin-bottom: 12px; }
 
     .footer-col ul li a {
-      color: #999;
-      font-size: 0.88rem;
+      color: #6b7280;
+      font-size: 0.87rem;
       transition: color 0.25s;
+      display: flex;
+      align-items: center;
+      gap: 7px;
     }
 
-    .footer-col ul li a:hover { color: var(--primary); }
+    .footer-col ul li a:hover { color: var(--accent); }
 
     .footer-bottom {
-      border-top: 1px solid rgba(255,255,255,0.07);
-      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding-top: 26px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 14px;
       font-size: 0.82rem;
     }
 
-    .footer-bottom a { color: var(--primary); }
+    .footer-bottom a { color: var(--accent); }
 
-    /* ---------- RESPONSIVE ---------- */
-    @media (max-width: 900px) {
+    /* =========================================
+       RESPONSIVE
+    ========================================= */
+    @media (max-width: 960px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 40px; }
       .footer-grid { grid-template-columns: 1fr 1fr; }
     }
 
     @media (max-width: 640px) {
       .nav-links { display: none; }
       .footer-grid { grid-template-columns: 1fr; }
-      .hero { padding: 70px 0 60px; }
+      .trust-inner { gap: 18px; }
     }
+
   </style>
 </head>
-
 <body>
 
-  <!-- ========== NAVIGATION ========== -->
-  <nav aria-label="Main Navigation">
-    <div class="container nav-inner">
-      <a href="https://indiarentalz.com" class="logo" rel="dofollow">India<span>Rentalz</span></a>
-      <ul class="nav-links">
-        <li><a href="https://indiarentalz.com/#categories">Categories</a></li>
-        <li><a href="https://indiarentalz.com/#how-it-works">How It Works</a></li>
-        <li><a href="https://indiarentalz.com/#global">Global Reach</a></li>
-        <li><a href="https://indiarentalz.com" class="nav-cta" rel="dofollow">List Your Rental</a></li>
-      </ul>
+<!-- =========================================
+     NAVBAR
+========================================= -->
+<nav aria-label="Main Navigation">
+  <div class="container nav-inner">
+    <a href="https://indiarentalz.com" class="logo" rel="dofollow">
+      <div class="logo-icon">💻</div>
+      India<span>Rentalz</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#devices">Devices</a></li>
+      <li><a href="#plans">Plans</a></li>
+      <li><a href="#cities">Cities</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#global">Global</a></li>
+      <li>
+        <a href="https://indiarentalz.com" class="nav-cta" rel="dofollow">
+          Rent Now
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- =========================================
+     HERO
+========================================= -->
+<header class="hero" id="home">
+  <div class="container">
+    <div class="hero-grid">
+
+      <div class="hero-content">
+        <div class="hero-badge">🇮🇳 India's #1 Laptop Rental Platform</div>
+        <h1>
+          Rent a <span class="highlight">Laptop, MacBook</span><br />
+          or Computer<br />Anywhere in India
+        </h1>
+        <p>
+          Need a laptop for a day, a week, or a month?
+          <strong>
+            <a href="https://indiarentalz.com" rel="dofollow"
+               style="color:var(--accent)">IndiaRentalz.com</a>
+          </strong>
+          delivers verified, high-performance devices to your doorstep —
+          pan India. No deposit hassle, no long commitment.
+        </p>
+        <div class="hero-btns">
+          <a href="https://indiarentalz.com" class="btn-primary" rel="dofollow">
+            💻 Browse Laptops
+          </a>
+          <a href="https://indiarentalz.com" class="btn-ghost" rel="dofollow">
+            📞 Get a Quote
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <a href="https://indiarentalz.com" class="device-card" rel="dofollow">
+          <div class="device-emoji">🍎</div>
+          <div class="device-info">
+            <strong>MacBook Pro / Air</strong>
+            <span>M1, M2, M3 · All sizes</span>
+          </div>
+          <div class="device-price">
+            <strong>₹999/day</strong>
+            <span>onwards</span>
+          </div>
+        </a>
+        <a href="https://indiarentalz.com" class="device-card" rel="dofollow">
+          <div class="device-emoji">💻</div>
+          <div class="device-info">
+            <strong>Windows Laptops</strong>
+            <span>Dell, HP, Lenovo, Asus</span>
+          </div>
+          <div class="device-price">
+            <strong>₹499/day</strong>
+            <span>onwards</span>
+          </div>
+        </a>
+        <a href="https://indiarentalz.com" class="device-card" rel="dofollow">
+          <div class="device-emoji">🖥️</div>
+          <div class="device-info">
+            <strong>Desktop Computers</strong>
+            <span>iMac, Windows PC, Workstation</span>
+          </div>
+          <div class="device-price">
+            <strong>₹799/day</strong>
+            <span>onwards</span>
+          </div>
+        </a>
+        <a href="https://indiarentalz.com" class="device-card" rel="dofollow">
+          <div class="device-emoji">⚡</div>
+          <div class="device-info">
+            <strong>Gaming Laptops</strong>
+            <span>RTX, i9 · High Performance</span>
+          </div>
+          <div class="device-price">
+            <strong>₹1299/day</strong>
+            <span>onwards</span>
+          </div>
+        </a>
+      </div>
+
     </div>
-  </nav>
+  </div>
+</header>
 
-  <!-- ========== HERO ========== -->
-  <header class="hero" id="home">
-    <div class="container">
-      <div class="hero-badge">🇮🇳 India's #1 Rental Marketplace</div>
-      <h1>Rent <span>Anything</span> You Need<br />Across India &amp; Beyond</h1>
-      <p>Bikes, cars, homes, electronics, furniture — find verified rental listings at unbeatable prices on <strong><a href="https://indiarentalz.com" rel="dofollow" style="color:var(--primary)">indiarentalz.com</a></strong>.</p>
-      <div class="hero-btns">
-        <a href="https://indiarentalz.com" class="btn-primary" rel="dofollow">🔍 Browse Rentals</a>
-        <a href="https://indiarentalz.com" class="btn-outline" rel="dofollow">Post Your Listing Free</a>
-      </div>
+<!-- =========================================
+     TRUST BAR
+========================================= -->
+<div class="trust-bar" aria-label="Trust Signals">
+  <div class="container">
+    <div class="trust-inner">
+      <div class="trust-item"><span>✅</span><span>Verified Devices</span></div>
+      <div class="trust-item"><span>🚚</span><span>Free Delivery Pan India</span></div>
+      <div class="trust-item"><span>🔒</span><span>Zero Security Deposit</span></div>
+      <div class="trust-item"><span>🛠️</span><span>Free Tech Support</span></div>
+      <div class="trust-item"><span>🔄</span><span>Easy Returns</span></div>
+      <div class="trust-item"><span>📦</span><span>Same Day Delivery</span></div>
     </div>
-  </header>
+  </div>
+</div>
 
-  <!-- ========== STATS ========== -->
-  <section class="stats" aria-label="Platform Statistics">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-item">
-          <h3>50,000+</h3>
-          <p>Active Listings</p>
-        </div>
-        <div class="stat-item">
-          <h3>200+</h3>
-          <p>Cities Covered</p>
-        </div>
-        <div class="stat-item">
-          <h3>20</h3>
-          <p>Global Regions</p>
-        </div>
-        <div class="stat-item">
-          <h3>1 Lakh+</h3>
-          <p>Happy Renters</p>
-        </div>
-        <div class="stat-item">
-          <h3>4.8 ★</h3>
-          <p>Average Rating</p>
-        </div>
+<!-- =========================================
+     STATS
+========================================= -->
+<section class="stats" aria-label="Platform Statistics">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <h3>10,000+</h3>
+        <p>Devices Rented</p>
       </div>
-    </div>
-  </section>
-
-  <!-- ========== CATEGORIES ========== -->
-  <section class="section" id="categories" aria-label="Rental Categories">
-    <div class="container">
-      <div class="section-header">
-        <span class="tag">Categories</span>
-        <h2>What Would You Like to Rent?</h2>
-        <p>Browse hundreds of categories on <a href="https://indiarentalz.com" rel="dofollow" style="color:var(--primary); font-weight:700;">IndiaRentalz.com</a> — all verified, all affordable.</p>
+      <div class="stat-item">
+        <h3>150+</h3>
+        <p>Cities Covered</p>
       </div>
-      <div class="categories-grid">
-        <a href="https://indiarentalz.com" class="cat-card" rel="dofollow">
-          <div class="cat-icon">🏠</div>
-          <h3>Homes &amp; Apartments</h3>
-          <p>PG, flats, villas</p>
-        </a>
-        <a href="https://indiarentalz.com" class="cat-card" rel="dofollow">
-          <div class="cat-icon">🏍️</div>
-          <h3>Bikes &amp; Scooters</h3>
-          <p>Short &amp; long term</p>
-        </a>
-        <a href="https://indiarentalz.com" class="cat-card" rel="dofollow">
-          <div class="cat-icon">🚗</div>
-          <h3>Cars</h3>
-          <p>Self-drive &amp; chauffeur</p>
-        </a>
-        <a href="https://indiarentalz.com" class="cat-card" rel="dofollow">
-          <div class="cat-icon">💻</div>
-          <h3>Electronics</h3>
-          <p>Laptops, cameras &amp; more</p>
-        </a>
-        <a href="https://indiarentalz.com" class="cat-card" rel="dofollow">
-          <div class="cat-icon">🛋️</div>
-          <h3>Furniture</h3>
-          <p>Office &amp; home</p>
-        </a>
-        <a href="https://indiarentalz.com" class="cat-card" rel="dofollow">
-          <div class="cat-icon">⚙️</div>
-          <h3>Equipment</h3>
-          <p>Construction &amp; events</p>
-        </a>
+      <div class="stat-item">
+        <h3>4.9 ★</h3>
+        <p>Average Rating</p>
       </div>
-    </div>
-  </section>
-
-  <!-- ========== FEATURES ========== -->
-  <section class="features" id="features" aria-label="Why Choose IndiaRentalz">
-    <div class="container">
-      <div class="section-header">
-        <span class="tag">Why Us</span>
-        <h2>Why Choose IndiaRentalz?</h2>
-        <p>We make renting simple, safe and affordable for everyone in India and across the globe.</p>
+      <div class="stat-item">
+        <h3>500+</h3>
+        <p>Device Models</p>
       </div>
-      <div class="features-grid">
-        <div class="feat-card">
-          <div class="feat-icon">✅</div>
-          <h3>100% Verified Listings</h3>
-          <p>Every listing on <a href="https://indiarentalz.com" rel="dofollow" style="color:var(--primary);">IndiaRentalz</a> is manually reviewed for authenticity and accuracy.</p>
-        </div>
-        <div class="feat-card">
-          <div class="feat-icon">💰</div>
-          <h3>Best Rental Prices</h3>
-          <p>Compare thousands of rental options and find the most competitive rates across all categories.</p>
-        </div>
-        <div class="feat-card">
-          <div class="feat-icon">📱</div>
-          <h3>Easy Mobile Experience</h3>
-          <p>List or discover rentals in minutes from any device. Fully optimized for mobile users.</p>
-        </div>
-        <div class="feat-card">
-          <div class="feat-icon">🔒</div>
-          <h3>Secure Transactions</h3>
-          <p>Your payments and personal data are protected with industry-standard encryption.</p>
-        </div>
-        <div class="feat-card">
-          <div class="feat-icon">🤝</div>
-          <h3>Owner &amp; Renter Support</h3>
-          <p>Dedicated support team available 7 days a week to resolve any dispute or query instantly.</p>
-        </div>
-        <div class="feat-card">
-          <div class="feat-icon">🌍</div>
-          <h3>Global Visibility</h3>
-          <p>Your Indian rental listings reach NRI audiences, expats, and tourists from 20+ countries.</p>
-        </div>
+      <div class="stat-item">
+        <h3>24 hrs</h3>
+        <p>Delivery Time</p>
       </div>
-    </div>
-  </section>
-
-  <!-- ========== GLOBAL REACH — ALL 20 BACKLINKS ========== -->
-  <section class="global" id="global" aria-label="Global Reach of IndiaRentalz">
-    <div class="container">
-      <div class="section-header">
-        <span class="tag">Global Reach</span>
-        <h2>IndiaRentalz is Recognized Worldwide</h2>
-        <p>Our platform serves users from over 20 countries. Discover Indian rental listings no matter where you are in the world.</p>
-      </div>
-      <div class="regions-grid">
-
-        <a href="https://www.google.com/url?q=https%3A%2F%2Findiarentalz.com"
-           class="region-card" rel="dofollow" title="IndiaRentalz – USA">
-          <span class="region-flag">🇺🇸</span>
-          <div class="region-info">
-            <strong>United States</strong>
-            <span>indiarentalz.com</span>
-          </div>
-        </a>
-
-        <a href="https://www.google.co.in/url?q=https%3A%2F%2Findiarentalz.com"
-           class="region-card" rel="dofollow" title="IndiaRentalz – India">
-          <span class="region-flag">🇮🇳</span>
-          <div class="region-info">
-            <strong>India</strong>
-            <span>indiarentalz.com</span>
-          </div>
-        </a>
-
-        <a href="https://www.google.co.uk/url?q=https%3A%2F%2Findiarentalz.com"
-           class="region-card" rel="dofollow" title="IndiaRentalz – United Kingdom">
-          <span class="region-flag">🇬🇧</span>
-          <div class="region-info">
-            <strong>United Kingdom</strong>
-            <span>indiarentalz.com</span>
-          </div>
-        </a>
-
-        <a href="https://www.google.ca/url?q=https%3A%2F%2Findiarentalz.com"
-           class="region-card" rel="dofollow" title="IndiaRentalz – Canada">
-          <span class="region-flag">🇨🇦</span>
-          <div class="region-info">
-            <strong>Canada</strong>
-            <span>indiarentalz.com</span>
-          </div>
-        </a>
-
-        <a href="https://www.google.com.au/url?q=https%3A%2F%2Findiarentalz.com"
-           class="region-card" rel="dofollow" title="IndiaRentalz – Australia">
-          <span class="region-flag">🇦🇺</span>
-          <div class="region-info">
-            <strong>Australia</strong>
-            <span>indiarentalz.com</span>
-          </div>
-        </a>
-
-        <a href="https://www.google.de/url?q=https%3A%2F%2Findiarentalz.com"
-           class="region-card" rel="dofollow" title="IndiaRentalz – Germany">
-          <span class="region-flag">🇩🇪</span>
-          <div class="region-info">
-            <strong>Germany</strong>
-            <span>indiarentalz.com</span>
-          </div>
-        </a>
-
-        <a href="https://www.google.fr/url?q=https%3A%2F%2Findiarentalz.com"
-           class="region-card" rel="dofollow" title="IndiaRentalz – France">
-          <span class="region-flag">🇫🇷</span>
-          <div class="region-info">
-            <strong>France</strong>
-            <span>indiarentalz.com</span>
-          </div>
-        </a>
-
-        <a href="https://www.google.it/url?q=https%3A%2F%2Findiarentalz.com"
-           class="region-card" rel="dofollow" title="IndiaRentalz – Italy">
-          <span class="region-flag">🇮🇹</span>
-          <div class="region-info">
-            <strong>Italy</strong>
-            <span>indiarentalz.com</span>
-          </div>
-        </a>
-
-        <a href="https://www.google.es/url?q=https%3A%2F%2Findiarentalz.com"
-           class="region-card" rel="dofollow" title="IndiaRentalz – Spain">
-          <span class="region-flag">🇪🇸</span>
-          <div class="region-info">
-            <strong>Spain</strong>
-            <span>indiarentalz.com</span>
-          </div>
-        </a>
-
-        <a href="https://www.google.nl/url?q=https%3A%2F%2Findiarentalz.com"
-           class="region-card" rel="dofollow" title="IndiaRentalz – Netherlands">
-          <span class="region-flag">🇳🇱</span>
-          <div class="region-info">
-            <strong>Netherlands</strong>
-            <span>indiarentalz.com</span>
-          </div>
-        </a>
-
-        <a href="https://www.google.com.br/url?q=https%3A%2F%2Findiarentalz.com"
-           class="region-card" rel="dofollow" title="IndiaRentalz – Brazil">
-          <span class="region-flag">🇧🇷</span>
-          <div class="region-info">
-            <strong>Brazil</strong>
-            <span>indiarentalz.com</span>
-          </div>
-        </a>
-
-        <a href="https://www.google.co.jp/url?q=https%3A%2F%2Findiarentalz.com"
-           class="region-card" rel="dofollow" title="IndiaRentalz – Japan">
-          <span class="region-flag">🇯🇵</span>
-          <div class="region-info">
-            <strong>Japan</strong>
-            <span>indiarentalz.com</span>
-          </div>
-        </a>
-
-        <a href="https://www.google.co.kr/url?q=https%3A%2F%2Findiarentalz.com"
-           class="region-card" rel="dofollow" title="IndiaRentalz – South Korea">
-          <span class="region-flag">🇰🇷</span>
-          <div class="region-info">
-            <strong>South Korea</strong>
-            <span>indiarentalz.com</span>
-          </div>
-        </a>
-
-        <a href="https://www.google.com.sg/url?q=https%3A%2F%2Findiarentalz.com"
-           class="region-card" rel="dofollow" title="IndiaRentalz – Singapore">
-          <span class="region-flag">🇸🇬</span>
-          <div class="region-info">
-            <strong>Singapore</strong>
-            <span>indiarentalz.com</span>
-          </div>
-        </a>
-
-        <a href="https://www.google.ae/url?q=https%3A%2F%2Findiarentalz.com"
-           class="region-card" rel="dofollow" title="IndiaRentalz – UAE">
-          <span class="region-flag">🇦🇪</span>
-          <div class="region-info">
-            <strong>UAE</strong>
-            <span>indiarentalz.com</span>
-          </div>
-        </a>
-
-        <a href="https://www.google.co.za/url?q=https%3A%2F%2Findiarentalz.com"
-           class="region-card" rel="dofollow" title="IndiaRentalz – South Africa">
-          <span class="region-flag">🇿🇦</span>
-          <div class="region-info">
-            <strong>South Africa</strong>
-            <span>indiarentalz.com</span>
-          </div>
-        </a>
-
-        <a href="https://www.google.com.mx/url?q=https%3A%2F%2Findiarentalz.com"
-           class="region-card" rel="dofollow" title="IndiaRentalz – Mexico">
-          <span class="region-flag">🇲🇽</span>
-          <div class="region-info">
-            <strong>Mexico</strong>
-            <span>indiarentalz.com</span>
-          </div>
-        </a>
-
-        <a href="https://www.google.ru/url?q=https%3A%2F%2Findiarentalz.com"
-           class="region-card" rel="dofollow" title="IndiaRentalz – Russia">
-          <span class="region-flag">🇷🇺</span>
-          <div class="region-info">
-            <strong>Russia</strong>
-            <span>indiarentalz.com</span>
-          </div>
-        </a>
-
-        <a href="https://www.google.com.tr/url?q=https%3A%2F%2Findiarentalz.com"
-           class="region-card" rel="dofollow" title="IndiaRentalz – Turkey">
-          <span class="region-flag">🇹🇷</span>
-          <div class="region-info">
-            <strong>Turkey</strong>
-            <span>indiarentalz.com</span>
-          </div>
-        </a>
-
-        <a href="https://www.google.com.my/url?q=https%3A%2F%2Findiarentalz.com"
-           class="region-card" rel="dofollow" title="IndiaRentalz – Malaysia">
-          <span class="region-flag">🇲🇾</span>
-          <div class="region-info">
-            <strong>Malaysia</strong>
-            <span>indiarentalz.com</span>
-          </div>
-        </a>
-
-      </div><!-- /regions-grid -->
-    </div>
-  </section>
-
-  <!-- ========== HOW IT WORKS ========== -->
-  <section class="how" id="how-it-works" aria-label="How IndiaRentalz Works">
-    <div class="container">
-      <div class="section-header">
-        <span class="tag">Process</span>
-        <h2>How IndiaRentalz Works</h2>
-        <p>Get started with your rental in 4 simple steps on <a href="https://indiarentalz.com" rel="dofollow" style="color:var(--primary);font-weight:700;">indiarentalz.com</a>.</p>
-      </div>
-      <div class="steps-grid">
-        <div class="step-card">
-          <div class="step-num">1</div>
-          <h3>Search a Category</h3>
-          <p>Browse by type, city, or price range to find exactly what you need to rent.</p>
-        </div>
-        <div class="step-card">
-          <div class="step-num">2</div>
-          <h3>Compare Listings</h3>
-          <p>Read reviews, compare prices, and check availability across multiple providers.</p>
-        </div>
-        <div class="step-card">
-          <div class="step-num">3</div>
-          <h3>Book Securely</h3>
-          <p>Confirm your booking with our secure payment system — no hidden charges.</p>
-        </div>
-        <div class="step-card">
-          <div class="step-num">4</div>
-          <h3>Enjoy Your Rental</h3>
-          <p>Pick up or get delivery. Rate your experience and help the community grow.</p>
-        </div>
+      <div class="stat-item">
+        <h3>₹0</h3>
+        <p>Security Deposit</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ========== CTA BANNER ========== -->
-  <section class="cta-banner" aria-label="Call To Action">
-    <div class="container">
-      <h2>Ready to Rent or List Something Today?</h2>
-      <p>Join over 1 lakh satisfied users who trust IndiaRentalz for all their rental needs across India and worldwide.</p>
-      <a href="https://indiarentalz.com" class="btn-white" rel="dofollow">Visit IndiaRentalz Now →</a>
+<!-- =========================================
+     DEVICES
+========================================= -->
+<section class="section" id="devices" aria-label="Laptop and Computer Rental Categories">
+  <div class="container">
+    <div class="section-header">
+      <span class="tag">Our Devices</span>
+      <h2>Laptops, MacBooks & Computers for Rent</h2>
+      <p>
+        Choose from a wide range of verified, well-maintained devices at
+        <a href="https://indiarentalz.com" rel="dofollow"
+           style="color:var(--primary);font-weight:700;">indiarentalz.com</a>.
+        Delivered anywhere in India.
+      </p>
     </div>
-  </section>
 
-  <!-- ========== FOOTER ========== -->
-  <footer aria-label="Site Footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="https://indiarentalz.com" class="logo" rel="dofollow">India<span>Rentalz</span></a>
-          <p>India's most trusted rental marketplace. Connecting renters and owners across 200+ cities and 20+ countries since 2020.</p>
+    <div class="devices-grid">
+
+      <!-- MacBook -->
+      <a href="https://indiarentalz.com" class="product-card" rel="dofollow">
+        <div class="product-top">
+          🍎
+          <span class="product-badge">Most Popular</span>
         </div>
-
-        <div class="footer-col">
-          <h4>Explore</h4>
-          <ul>
-            <li><a href="https://indiarentalz.com" rel="dofollow">Home Rentals</a></li>
-            <li><a href="https://indiarentalz.com" rel="dofollow">Bike Rentals</a></li>
-            <li><a href="https://indiarentalz.com" rel="dofollow">Car Rentals</a></li>
-            <li><a href="https://indiarentalz.com" rel="dofollow">Electronics</a></li>
-            <li><a href="https://indiarentalz.com" rel="dofollow">Furniture</a></li>
-          </ul>
+        <div class="product-body">
+          <h3>MacBook Pro & Air</h3>
+          <p>M1, M2, M3 chips. Perfect for designers, developers, and creative professionals.</p>
+          <div class="product-specs">
+            <span class="spec-tag">M1 / M2 / M3</span>
+            <span class="spec-tag">8GB–32GB RAM</span>
+            <span class="spec-tag">256GB–1TB SSD</span>
+            <span class="spec-tag">13" / 14" / 16"</span>
+          </div>
+          <div class="product-price">
+            <span class="from">From</span>
+            <span class="amount">₹999</span>
+            <span class="per">/day</span>
+          </div>
+          <span class="btn-card">Rent MacBook →</span>
         </div>
+      </a>
 
-        <div class="footer-col">
-          <h4>Company</h4>
-          <ul>
-            <li><a href="https://indiarentalz.com" rel="dofollow">About Us</a></li>
-            <li><a href="https://indiarentalz.com" rel="dofollow">Blog</a></li>
-            <li><a href="https://indiarentalz.com" rel="dofollow">Careers</a></li>
-            <li><a href="https://indiarentalz.com" rel="dofollow">Press</a></li>
-            <li><a href="https://indiarentalz.com" rel="dofollow">Contact Us</a></li>
-          </ul>
+      <!-- Windows Laptop -->
+      <a href="https://indiarentalz.com" class="product-card" rel="dofollow">
+        <div class="product-top">💻</div>
+        <div class="product-body">
+          <h3>Windows Laptops</h3>
+          <p>Dell, HP, Lenovo ThinkPad, Asus — ideal for office work, students & events.</p>
+          <div class="product-specs">
+            <span class="spec-tag">Intel i5 / i7</span>
+            <span class="spec-tag">8GB–16GB RAM</span>
+            <span class="spec-tag">256GB–512GB SSD</span>
+            <span class="spec-tag">14" / 15.6"</span>
+          </div>
+          <div class="product-price">
+            <span class="from">From</span>
+            <span class="amount">₹499</span>
+            <span class="per">/day</span>
+          </div>
+          <span class="btn-card">Rent Laptop →</span>
         </div>
+      </a>
 
-        <div class="footer-col">
-          <h4>Legal</h4>
-          <ul>
-            <li><a href="https://indiarentalz.com" rel="dofollow">Privacy Policy</a></li>
-            <li><a href="https://indiarentalz.com" rel="dofollow">Terms of Service</a></li>
-            <li><a href="https://indiarentalz.com" rel="dofollow">Cookie Policy</a></li>
-            <li><a href="https://indiarentalz.com" rel="dofollow">Sitemap</a></li>
-          </ul>
+      <!-- Gaming Laptop -->
+      <a href="https://indiarentalz.com" class="product-card" rel="dofollow">
+        <div class="product-top">
+          ⚡
+          <span class="product-badge">High Performance</span>
+        </div>
+        <div class="product-body">
+          <h3>Gaming Laptops</h3>
+          <p>RTX 3060/4060, Intel i9 / AMD Ryzen 9. Built for gaming, video editing & 3D work.</p>
+          <div class="product-specs">
+            <span class="spec-tag">RTX 3060 / 4060</span>
+            <span class="spec-tag">16GB–32GB RAM</span>
+            <span class="spec-tag">1TB SSD</span>
+            <span class="spec-tag">144Hz Display</span>
+          </div>
+          <div class="product-price">
+            <span class="from">From</span>
+            <span class="amount">₹1299</span>
+            <span class="per">/day</span>
+          </div>
+          <span class="btn-card">Rent Gaming Laptop →</span>
+        </div>
+      </a>
+
+      <!-- Desktop / iMac -->
+      <a href="https://indiarentalz.com" class="product-card" rel="dofollow">
+        <div class="product-top">🖥️</div>
+        <div class="product-body">
+          <h3>Desktop Computers</h3>
+          <p>iMac, Windows Desktops, and Workstations for offices, studios & bulk events.</p>
+          <div class="product-specs">
+            <span class="spec-tag">iMac M1 / M3</span>
+            <span class="spec-tag">Windows PC</span>
+            <span class="spec-tag">Workstations</span>
+            <span class="spec-tag">Bulk Available</span>
+          </div>
+          <div class="product-price">
+            <span class="from">From</span>
+            <span class="amount">₹799</span>
+            <span class="per">/day</span>
+          </div>
+          <span class="btn-card">Rent Desktop →</span>
+        </div>
+      </a>
+
+      <!-- Chromebook -->
+      <a href="https://indiarentalz.com" class="product-card" rel="dofollow">
+        <div class="product-top">
+          🌐
+          <span class="product-badge">Budget Pick</span>
+        </div>
+        <div class="product-body">
+          <h3>Chromebooks</h3>
+          <p>Lightweight, fast booting, ideal for students, online meetings and travel.</p>
+          <div class="product-specs">
+            <span class="spec-tag">Chrome OS</span>
+            <span class="spec-tag">4GB–8GB RAM</span>
+            <span class="spec-tag">64GB Storage</span>
+            <span class="spec-tag">All Day Battery</span>
+          </div>
+          <div class="product-price">
+            <span class="from">From</span>
+            <span class="amount">₹299</span>
+            <span class="per">/day</span>
+          </div>
+          <span class="btn-card">Rent Chromebook →</span>
+        </div>
+      </a>
+
+      <!-- Bulk / Events -->
+      <a href="https://indiarentalz.com" class="product-card" rel="dofollow">
+        <div class="product-top">🏢</div>
+        <div class="product-body">
+          <h3>Bulk Rental for Events</h3>
+          <p>Need 10, 50 or 500 laptops for an event, training, or corporate project? We've got you.</p>
+          <div class="product-specs">
+            <span class="spec-tag">Min 5 Units</span>
+            <span class="spec-tag">Custom Config</span>
+            <span class="spec-tag">On-site Support</span>
+            <span class="spec-tag">Best Pricing</span>
+          </div>
+          <div class="product-price">
+            <span class="from">Get Custom</span>
+            <span class="amount">Quote</span>
+          </div>
+          <span class="btn-card">Request Bulk Quote →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================
+     PLANS / PRICING
+========================================= -->
+<section class="section-alt" id="plans" aria-label="Rental Plans">
+  <div class="container">
+    <div class="section-header">
+      <span class="tag">Rental Plans</span>
+      <h2>Flexible Plans for Every Need</h2>
+      <p>Daily, weekly, or monthly — rent on your own terms with zero hidden charges.</p>
+    </div>
+
+    <div class="plans-grid">
+
+      <div class="plan-card">
+        <div class="plan-icon">📅</div>
+        <h3>Daily Plan</h3>
+        <p class="plan-desc">Perfect for short-term needs, urgent projects, or one-day events.</p>
+        <div class="plan-price">
+          <span class="amount">₹499</span>
+          <span class="per">/ day onwards</span>
+        </div>
+        <ul class="plan-features">
+          <li><span class="check">✓</span>Minimum 1 day</li>
+          <li><span class="check">✓</span>Free delivery & pickup</li>
+          <li><span class="check">✓</span>All device types</li>
+          <li><span class="check">✓</span>Same day delivery</li>
+        </ul>
+        <a href="https://indiarentalz.com" class="btn-card" rel="dofollow">Book Daily Plan</a>
+      </div>
+
+      <div class="plan-card featured">
+        <div class="plan-featured-badge">⭐ Most Popular</div>
+        <div class="plan-icon">📆</div>
+        <h3>Weekly Plan</h3>
+        <p class="plan-desc">Great value for project work, training sessions, or work trips.</p>
+        <div class="plan-price">
+          <span class="amount">₹2,499</span>
+          <span class="per">/ week onwards</span>
+        </div>
+        <ul class="plan-features">
+          <li><span class="check">✓</span>7 days minimum</li>
+          <li><span class="check">✓</span>Free delivery & pickup</li>
+          <li><span class="check">✓</span>Free tech support</li>
+          <li><span class="check">✓</span>Replacement guarantee</li>
+        </ul>
+        <a href="https://indiarentalz.com" class="btn-card" rel="dofollow">Book Weekly Plan</a>
+      </div>
+
+      <div class="plan-card">
+        <div class="plan-icon">🗓️</div>
+        <h3>Monthly Plan</h3>
+        <p class="plan-desc">Ideal for employees, freelancers, startups, and long-term use.</p>
+        <div class="plan-price">
+          <span class="amount">₹6,999</span>
+          <span class="per">/ month onwards</span>
+        </div>
+        <ul class="plan-features">
+          <li><span class="check">✓</span>30 days minimum</li>
+          <li><span class="check">✓</span>Free delivery & pickup</li>
+          <li><span class="check">✓</span>Priority support</li>
+          <li><span class="check">✓</span>Free device swap</li>
+        </ul>
+        <a href="https://indiarentalz.com" class="btn-card" rel="dofollow">Book Monthly Plan</a>
+      </div>
+
+      <div class="plan-card">
+        <div class="plan-icon">🏢</div>
+        <h3>Corporate Plan</h3>
+        <p class="plan-desc">Custom pricing for bulk orders, IT teams, and long-term enterprise contracts.</p>
+        <div class="plan-price">
+          <span class="amount">Custom</span>
+          <span class="per">pricing</span>
+        </div>
+        <ul class="plan-features">
+          <li><span class="check">✓</span>5+ devices minimum</li>
+          <li><span class="check">✓</span>Dedicated account manager</li>
+          <li><span class="check">✓</span>On-site tech support</li>
+          <li><span class="check">✓</span>GST invoice provided</li>
+        </ul>
+        <a href="https://indiarentalz.com" class="btn-card" rel="dofollow">Get Corporate Quote</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================
+     WHY CHOOSE US
+========================================= -->
+<section class="section" id="features" aria-label="Why Choose IndiaRentalz">
+  <div class="container">
+    <div class="section-header">
+      <span class="tag">Why IndiaRentalz</span>
+      <h2>Why 10,000+ Customers Trust Us</h2>
+      <p>We go beyond just renting a device — we ensure a seamless, worry-free experience every single time.</p>
+    </div>
+    <div class="features-grid">
+
+      <div class="feat-card">
+        <div class="feat-icon">✅</div>
+        <h3>100% Verified Devices</h3>
+        <p>Every laptop and computer is tested, sanitized, and certified before delivery. What you see is what you get.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">🚚</div>
+        <h3>Free Pan India Delivery</h3>
+        <p>We deliver and pick up from your doorstep anywhere in India — at zero extra cost, even in Tier 2 & 3 cities.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">🔒</div>
+        <h3>Zero Security Deposit</h3>
+        <p>No upfront security deposits. Rent a MacBook or laptop with just the rental fee and nothing more.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">🛠️</div>
+        <h3>Free Tech Support</h3>
+        <p>Face a technical issue? Our support team resolves it remotely or replaces the device the same day.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">🔄</div>
+        <h3>Easy Upgrades & Swaps</h3>
+        <p>Need a faster machine mid-rental? Upgrade anytime. We swap your device with zero downtime.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">🧾</div>
+        <h3>GST Invoice Included</h3>
+        <p>Get a proper GST invoice with every rental — perfect for corporate expense claims and reimbursements.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================
+     CITIES
+========================================= -->
+<section class="section-alt" id="cities" aria-label="Cities Where IndiaRentalz Delivers">
+  <div class="container">
+    <div class="section-header">
+      <span class="tag">Service Areas</span>
+      <h2>Laptop Rentals Delivered Across India</h2>
+      <p>
+        <a href="https://indiarentalz.com" rel="dofollow"
+           style="color:var(--primary);font-weight:700;">IndiaRentalz</a>
+        delivers laptops, MacBooks & computers to 150+ cities across India.
+      </p>
+    </div>
+
+    <div class="cities-grid">
+      <a href="https://indiarentalz.com" class="city-chip" rel="dofollow"><span class="city-icon">🌆</span>Mumbai</a>
+      <a href="https://indiarentalz.com" class="city-chip" rel="dofollow"><span class="city-icon">🌆</span>Delhi</a>
+      <a href="https://indiarentalz.com" class="city-chip" rel="dofollow"><span class="city-icon">🌆</span>Bangalore</a>
+      <a href="https://indiarentalz.com" class="city-chip" rel="dofollow"><span class="city-icon">🌆</span>Hyderabad</a>
+      <a href="https://indiarentalz.com" class="city-chip" rel="dofollow"><span class="city-icon">🌆</span>Chennai</a>
+      <a href="https://indiarentalz.com" class="city-chip" rel="dofollow"><span class="city-icon">🌆</span>Pune</a>
+      <a href="https://indiarentalz.com" class="city-chip" rel="dofollow"><span class="city-icon">🌆</span>Kolkata</a>
+      <a href="https://indiarentalz.com" class="city-chip" rel="dofollow"><span class="city-icon">🌆</span>Ahmedabad</a>
+      <a href="https://indiarentalz.com" class="city-chip" rel="dofollow"><span class="city-icon">🌆</span>Jaipur</a>
+      <a href="https://indiarentalz.com" class="city-chip" rel="dofollow"><span class="city-icon">🌆</span>Surat</a>
+      <a href="https://indiarentalz.com" class="city-chip" rel="dofollow"><span class="city-icon">🌆</span>Lucknow</a>
+      <a href="https://indiarentalz.com" class="city-chip" rel="dofollow"><span class="city-icon">🌆</span>Chandigarh</a>
+      <a href="https://indiarentalz.com" class="city-chip" rel="dofollow"><span class="city-icon">🌆</span>Kochi</a>
+      <a href="https://indiarentalz.com" class="city-chip" rel="dofollow"><span class="city-icon">🌆</span>Indore</a>
+      <a href="https://indiarentalz.com" class="city-chip" rel="dofollow"><span class="city-icon">🌆</span>Bhopal</a>
+      <a href="https://indiarentalz.com" class="city-chip" rel="dofollow"><span class="city-icon">🌆</span>Nagpur</a>
+      <a href="https://indiarentalz.com" class="city-chip" rel="dofollow"><span class="city-icon">🌆</span>Gurgaon</a>
+      <a href="https://indiarentalz.com" class="city-chip" rel="dofollow"><span class="city-icon">🌆</span>Noida</a>
+      <a href="https://indiarentalz.com" class="city-chip" rel="dofollow"><span class="city-icon">🌆</span>Coimbatore</a>
+      <a href="https://indiarentalz.com" class="city-chip" rel="dofollow"><span class="city-icon">🌆</span>+ 130 More Cities</a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================
+     HOW IT WORKS
+========================================= -->
+<section class="section" id="how-it-works" aria-label="How IndiaRentalz Works">
+  <div class="container">
+    <div class="section-header">
+      <span class="tag">Process</span>
+      <h2>Rent a Laptop in 4 Easy Steps</h2>
+      <p>Getting a laptop on rent from
+        <a href="https://indiarentalz.com" rel="dofollow"
+           style="color:var(--primary);font-weight:700;">indiarentalz.com</a>
+        takes less than 5 minutes.</p>
+    </div>
+    <div class="steps-wrapper">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h3>Choose Your Device</h3>
+        <p>Browse MacBooks, Windows laptops, gaming rigs, or desktops. Filter by specs, brand and price.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h3>Select Your Plan</h3>
+        <p>Pick daily, weekly, or monthly. Enter your delivery address anywhere in India.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h3>Confirm & Pay Securely</h3>
+        <p>Pay online — UPI, credit/debit card, net banking, or EMI. Get instant confirmation.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">4</div>
+        <h3>Get it Delivered</h3>
+        <p>Your device arrives at your door within 24 hours, fully charged and ready to use.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================
+     GLOBAL REACH — ALL 20 BACKLINKS
+========================================= -->
+<section class="section-alt" id="global" aria-label="IndiaRentalz Global Presence">
+  <div class="container">
+    <div class="section-header">
+      <span class="tag">Global Presence</span>
+      <h2>IndiaRentalz Trusted Worldwide</h2>
+      <p>
+        NRIs, expats, and students planning to visit India can pre-book laptop rentals from
+        <a href="https://indiarentalz.com" rel="dofollow"
+           style="color:var(--primary);font-weight:700;">indiarentalz.com</a>
+        — from anywhere in the world.
+      </p>
+    </div>
+
+    <div class="regions-grid">
+
+      <a href="https://www.google.com/url?q=https%3A%2F%2Findiarentalz.com"
+         class="region-card" rel="dofollow" title="Rent Laptop India – USA">
+        <span class="region-flag">🇺🇸</span>
+        <div class="region-info">
+          <strong>United States</strong>
+          <span>Book India Laptop Rental</span>
+        </div>
+        <span class="region-arrow">→</span>
+      </a>
+
+      <a href="https://www.google.co.in/url?q=https%3A%2F%2Findiarentalz.com"
+         class="region-card" rel="dofollow" title="Rent Laptop Across India">
+        <span class="region-flag">🇮🇳</span>
+        <div class="region-info">
+          <strong>India</strong>
+          <span>Laptop & MacBook Rental</span>
+        </div>
+        <span class="region-arrow">→</span>
+      </a>
+
+      <a href="https://www.google.co.uk/url?q=https%3A%2F%2Findiarentalz.com"
+         class="region-card" rel="dofollow" title="Rent Laptop India – UK">
+        <span class="region-flag">🇬🇧</span>
+        <div class="region-info">
+          <strong>United Kingdom</strong>
+          <span>Book India Laptop Rental</span>
+        </div>
+        <span class="region-arrow">→</span>
+      </a>
+
+      <a href="https://www.google.ca/url?q=https%3A%2F%2Findiarentalz.com"
+         class="region-card" rel="dofollow" title="Rent Laptop India – Canada">
+        <span class="region-flag">🇨🇦</span>
+        <div class="region-info">
+          <strong>Canada</strong>
+          <span>Book India Laptop Rental</span>
+        </div>
+        <span class="region-arrow">→</span>
+      </a>
+
+      <a href="https://www.google.com.au/url?q=https%3A%2F%2Findiarentalz.com"
+         class="region-card" rel="dofollow" title="Rent Laptop India – Australia">
+        <span class="region-flag">🇦🇺</span>
+        <div class="region-info">
+          <strong>Australia</strong>
+          <span>Book India Laptop Rental</span>
+        </div>
+        <span class="region-arrow">→</span>
+      </a>
+
+      <a href="https://www.google.de/url?q=https%3A%2F%2Findiarentalz.com"
+         class="region-card" rel="dofollow" title="Rent Laptop India – Germany">
+        <span class="region-flag">🇩🇪</span>
+        <div class="region-info">
+          <strong>Germany</strong>
+          <span>Book India Laptop Rental</span>
+        </div>
+        <span class="region-arrow">→</span>
+      </a>
+
+      <a href="https://www.google.fr/url?q=https%3A%2F%2Findiarentalz.com"
+         class="region-card" rel="dofollow" title="Rent Laptop India – France">
+        <span class="region-flag">🇫🇷</span>
+        <div class="region-info">
+          <strong>France</strong>
+          <span>Book India Laptop Rental</span>
+        </div>
+        <span class="region-arrow">→</span>
+      </a>
+
+      <a href="https://www.google.it/url?q=https%3A%2F%2Findiarentalz.com"
+         class="region-card" rel="dofollow" title="Rent Laptop India – Italy">
+        <span class="region-flag">🇮🇹</span>
+        <div class="region-info">
+          <strong>Italy</strong>
+          <span>Book India Laptop Rental</span>
+        </div>
+        <span class="region-arrow">→</span>
+      </a>
+
+      <a href="https://www.google.es/url?q=https%3A%2F%2Findiarentalz.com"
+         class="region-card" rel="dofollow" title="Rent Laptop India – Spain">
+        <span class="region-flag">🇪🇸</span>
+        <div class="region-info">
+          <strong>Spain</strong>
+          <span>Book India Laptop Rental</span>
+        </div>
+        <span class="region-arrow">→</span>
+      </a>
+
+      <a href="https://www.google.nl/url?q=https%3A%2F%2Findiarentalz.com"
+         class="region-card" rel="dofollow" title="Rent Laptop India – Netherlands">
+        <span class="region-flag">🇳🇱</span>
+        <div class="region-info">
+          <strong>Netherlands</strong>
+          <span>Book India Laptop Rental</span>
+        </div>
+        <span class="region-arrow">→</span>
+      </a>
+
+      <a href="https://www.google.com.br/url?q=https%3A%2F%2Findiarentalz.com"
+         class="region-card" rel="dofollow" title="Rent Laptop India – Brazil">
+        <span class="region-flag">🇧🇷</span>
+        <div class="region-info">
+          <strong>Brazil</strong>
+          <span>Book India Laptop Rental</span>
+        </div>
+        <span class="region-arrow">→</span>
+      </a>
+
+      <a href="https://www.google.co.jp/url?q=https%3A%2F%2Findiarentalz.com"
+         class="region-card" rel="dofollow" title="Rent Laptop India – Japan">
+        <span class="region-flag">🇯🇵</span>
+        <div class="region-info">
+          <strong>Japan</strong>
+          <span>Book India Laptop Rental</span>
+        </div>
+        <span class="region-arrow">→</span>
+      </a>
+
+      <a href="https://www.google.co.kr/url?q=https%3A%2F%2Findiarentalz.com"
+         class="region-card" rel="dofollow" title="Rent Laptop India – South Korea">
+        <span class="region-flag">🇰🇷</span>
+        <div class="region-info">
+          <strong>South Korea</strong>
+          <span>Book India Laptop Rental</span>
+        </div>
+        <span class="region-arrow">→</span>
+      </a>
+
+      <a href="https://www.google.com.sg/url?q=https%3A%2F%2Findiarentalz.com"
+         class="region-card" rel="dofollow" title="Rent Laptop India – Singapore">
+        <span class="region-flag">🇸🇬</span>
+        <div class="region-info">
+          <strong>Singapore</strong>
+          <span>Book India Laptop Rental</span>
+        </div>
+        <span class="region-arrow">→</span>
+      </a>
+
+      <a href="https://www.google.ae/url?q=https%3A%2F%2Findiarentalz.com"
+         class="region-card" rel="dofollow" title="Rent Laptop India – UAE">
+        <span class="region-flag">🇦🇪</span>
+        <div class="region-info">
+          <strong>UAE</strong>
+          <span>Book India Laptop Rental</span>
+        </div>
+        <span class="region-arrow">→</span>
+      </a>
+
+      <a href="https://www.google.co.za/url?q=https%3A%2F%2Findiarentalz.com"
+         class="region-card" rel="dofollow" title="Rent Laptop India – South Africa">
+        <span class="region-flag">🇿🇦</span>
+        <div class="region-info">
+          <strong>South Africa</strong>
+          <span>Book India Laptop Rental</span>
+        </div>
+        <span class="region-arrow">→</span>
+      </a>
+
+      <a href="https://www.google.com.mx/url?q=https%3A%2F%2Findiarentalz.com"
+         class="region-card" rel="dofollow" title="Rent Laptop India – Mexico">
+        <span class="region-flag">🇲🇽</span>
+        <div class="region-info">
+          <strong>Mexico</strong>
+          <span>Book India Laptop Rental</span>
+        </div>
+        <span class="region-arrow">→</span>
+      </a>
+
+      <a href="https://www.google.ru/url?q=https%3A%2F%2Findiarentalz.com"
+         class="region-card" rel="dofollow" title="Rent Laptop India – Russia">
+        <span class="region-flag">🇷🇺</span>
+        <div class="region-info">
+          <strong>Russia</strong>
+          <span>Book India Laptop Rental</span>
+        </div>
+        <span class="region-arrow">→</span>
+      </a>
+
+      <a href="https://www.google.com.tr/url?q=https%3A%2F%2Findiarentalz.com"
+         class="region-card" rel="dofollow" title="Rent Laptop India – Turkey">
+        <span class="region-flag">🇹🇷</span>
+        <div class="region-info">
+          <strong>Turkey</strong>
+          <span>Book India Laptop Rental</span>
+        </div>
+        <span class="region-arrow">→</span>
+      </a>
+
+      <a href="https://www.google.com.my/url?q=https%3A%2F%2Findiarentalz.com"
+         class="region-card" rel="dofollow" title="Rent Laptop India – Malaysia">
+        <span class="region-flag">🇲🇾</span>
+        <div class="region-info">
+          <strong>Malaysia</strong>
+          <span>Book India Laptop Rental</span>
+        </div>
+        <span class="region-arrow">→</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================
+     FAQ
+========================================= -->
+<section class="section" id="faq" aria-label="Frequently Asked Questions">
+  <div class="container">
+    <div class="section-header">
+      <span class="tag">FAQ</span>
+      <h2>Frequently Asked Questions</h2>
+      <p>Everything you need to know about renting a laptop or MacBook from IndiaRentalz.</p>
+    </div>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <div class="faq-q">
+          Is there a security deposit to rent a laptop?
+          <span>+</span>
+        </div>
+        <div class="faq-a">
+          No. IndiaRentalz charges zero security deposit. You only pay the rental fee for the duration you choose — daily, weekly, or monthly.
         </div>
       </div>
 
-      <div class="footer-bottom">
-        <p>© 2025 <a href="https://indiarentalz.com" rel="dofollow">IndiaRentalz.com</a>. All Rights Reserved.</p>
-        <p>Built with ❤️ for India &amp; the World</p>
+      <div class="faq-item">
+        <div class="faq-q">
+          How fast is the delivery?
+          <span>+</span>
+        </div>
+        <div class="faq-a">
+          We offer same-day delivery in major metros like Mumbai, Delhi, Bangalore, Hyderabad, and Chennai. For other cities, delivery is within 24–48 hours.
+        </div>
       </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          What happens if the laptop breaks during my rental?
+          <span>+</span>
+        </div>
+        <div class="faq-a">
+          Don't worry — we provide free technical support and a device replacement guarantee. If the device has a hardware issue, we replace it at no extra cost.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          Can I rent a MacBook for just one day?
+          <span>+</span>
+        </div>
+        <div class="faq-a">
+          Absolutely. Our daily plan allows you to rent a MacBook, Windows laptop, or desktop for as little as one day. Minimum rental period is 24 hours.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          Do you provide GST invoices?
+          <span>+</span>
+        </div>
+        <div class="faq-a">
+          Yes. Every rental comes with a proper GST invoice, making it easy for businesses and freelancers to claim expenses.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          Can I extend my rental duration?
+          <span>+</span>
+        </div>
+        <div class="faq-a">
+          Yes, you can extend your rental at any time by contacting us on <a href="https://indiarentalz.com" rel="dofollow" style="color:var(--primary)">indiarentalz.com</a>. We will adjust the billing accordingly.
+        </div>
+      </div>
+
     </div>
-  </footer>
+  </div>
+</section>
+
+<!-- =========================================
+     CTA BANNER
+========================================= -->
+<section class="cta-banner" aria-label="Call to Action">
+  <div class="container">
+    <h2>Need a Laptop or MacBook Today?</h2>
+    <p>
+      Rent a verified, high-performance laptop or MacBook from
+      IndiaRentalz and get it delivered to your door anywhere in India.
+    </p>
+    <a href="https://indiarentalz.com" class="btn-white" rel="dofollow">
+      💻 Rent Now at IndiaRentalz →
+    </a>
+  </div>
+</section>
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+<footer aria-label="Site Footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <a href="https://indiarentalz.com" class="footer-logo" rel="dofollow">
+          <div class="logo-icon">💻</div>
+          India<span>Rentalz</span>
+        </a>
+        <p>
+          India's most trusted platform to rent laptops, MacBooks, and computers.
+          Delivering to 150+ cities across India with zero deposit, free support, and same-day delivery.
+        </p>
+        <div class="footer-contact">
+          <a href="https://indiarentalz.com" rel="dofollow">🌐 www.indiarentalz.com</a>
+          <a href="https://indiarentalz.com" rel="dofollow">📧 support@indiarentalz.com</a>
+          <a href="https://indiarentalz.com" rel="dofollow">📞 +91-XXXXX-XXXXX</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Rent Devices</h4>
+        <ul>
+          <li><a href="https://indiarentalz.com" rel="dofollow">→ Rent MacBook</a></li>
+          <li><a href="https://indiarentalz.com" rel="dofollow">→ Rent Laptop</a></li>
+          <li><a href="https://indiarentalz.com" rel="dofollow">→ Rent Gaming Laptop</a></li>
+          <li><a href="https://indiarentalz.com" rel="dofollow">→ Rent Desktop PC</a></li>
+          <li><a href="https://indiarentalz.com" rel="dofollow">→ Bulk Rental</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Top Cities</h4>
+        <ul>
+          <li><a href="https://indiarentalz.com" rel="dofollow">→ Mumbai</a></li>
+          <li><a href="https://indiarentalz.com" rel="dofollow">→ Delhi</a></li>
+          <li><a href="https://indiarentalz.com" rel="dofollow">→ Bangalore</a></li>
+          <li><a href="https://indiarentalz.com" rel="dofollow">→ Hyderabad</a></li>
+          <li><a href="https://indiarentalz.com" rel="dofollow">→ Chennai</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="https://indiarentalz.com" rel="dofollow">→ About Us</a></li>
+          <li><a href="https://indiarentalz.com" rel="dofollow">→ Blog</a></li>
+          <li><a href="https://indiarentalz.com" rel="dofollow">→ Privacy Policy</a></li>
+          <li><a href="https://indiarentalz.com" rel="dofollow">→ Terms of Service</a></li>
+          <li><a href="https://indiarentalz.com" rel="dofollow">→ Sitemap</a></li>
+        </ul>
+      </div>
+
+    </div><!-- /footer-grid -->
+
+    <div class="footer-bottom">
+      <p>
+        © 2025
+        <a href="https://indiarentalz.com" rel="dofollow">IndiaRentalz.com</a>
+        — All Rights Reserved. Laptop & MacBook Rentals Across India.
+      </p>
+      <p>Made with ❤️ for India</p>
+    </div>
+
+  </div>
+</footer>
 
 </body>
 </html>
