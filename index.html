@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ========== META & SEO ========== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow" />
+
+  <title>India Rentalz – Rent Anything Across India | indiarentalz.com</title>
+  <meta name="description" content="IndiaRentalz.com is your trusted rental marketplace. Rent bikes, cars, homes, electronics & more across India. Available globally. Explore now!" />
+  <meta name="keywords" content="India rentals, rent in India, bike rental India, car rental India, home rental India, indiarentalz, rental marketplace India" />
+  <meta name="author" content="IndiaRentalz" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://indiarentalz.com" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://indiarentalz.com" />
+  <meta property="og:title"       content="India Rentalz – Rent Anything Across India" />
+  <meta property="og:description" content="Your #1 rental marketplace in India. Rent bikes, cars, homes, gadgets & more. Trusted by thousands." />
+  <meta property="og:image"       content="https://indiarentalz.com/og-image.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="India Rentalz – Rent Anything Across India" />
+  <meta name="twitter:description" content="Explore thousands of rental listings across India. Verified. Affordable. Easy." />
+  <meta name="twitter:image"       content="https://indiarentalz.com/og-image.jpg" />
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "IndiaRentalz",
+    "url": "https://indiarentalz.com",
+    "logo": "https://indiarentalz.com/logo.png",
+    "description": "India's leading online rental marketplace for vehicles, homes, electronics and more.",
+    "sameAs": [
+      "https://www.google.com/url?q=https%3A%2F%2Findiarentalz.com",
+      "https://www.google.co.in/url?q=https%3A%2F%2Findiarentalz.com",
+      "https://www.google.co.uk/url?q=https%3A%2F%2Findiarentalz.com",
+      "https://www.google.ca/url?q=https%3A%2F%2Findiarentalz.com",
+      "https://www.google.com.au/url?q=https%3A%2F%2Findiarentalz.com",
+      "https://www.google.de/url?q=https%3A%2F%2Findiarentalz.com",
+      "https://www.google.fr/url?q=https%3A%2F%2Findiarentalz.com",
+      "https://www.google.it/url?q=https%3A%2F%2Findiarentalz.com",
+      "https://www.google.es/url?q=https%3A%2F%2Findiarentalz.com",
+      "https://www.google.nl/url?q=https%3A%2F%2Findiarentalz.com",
+      "https://www.google.com.br/url?q=https%3A%2F%2Findiarentalz.com",
+      "https://www.google.co.jp/url?q=https%3A%2F%2Findiarentalz.com",
+      "https://www.google.co.kr/url?q=https%3A%2F%2Findiarentalz.com",
+      "https://www.google.com.sg/url?q=https%3A%2F%2Findiarentalz.com",
+      "https://www.google.ae/url?q=https%3A%2F%2Findiarentalz.com",
+      "https://www.google.co.za/url?q=https%3A%2F%2Findiarentalz.com",
+      "https://www.google.com.mx/url?q=https%3A%2F%2Findiarentalz.com",
+      "https://www.google.ru/url?q=https%3A%2F%2Findiarentalz.com",
+      "https://www.google.com.tr/url?q=https%3A%2F%2Findiarentalz.com",
+      "https://www.google.com.my/url?q=https%3A%2F%2Findiarentalz.com"
+    ]
+  }
+  </script>
+
+  <!-- ========== STYLES ========== -->
+  <style>
+    /* ---------- Reset & Base ---------- */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary:   #FF6B00;
+      --primary-d: #e05e00;
+      --dark:      #1a1a2e;
+      --mid:       #16213e;
+      --light:     #f5f7fa;
+      --white:     #ffffff;
+      --text:      #333;
+      --muted:     #666;
+      --radius:    12px;
+      --shadow:    0 4px 24px rgba(0,0,0,0.10);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.7;
+    }
+
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+    ul { list-style: none; }
+
+    .container {
+      width: 92%;
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    /* ---------- NAV ---------- */
+    nav {
+      background: var(--dark);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 0;
+    }
+
+    .logo {
+      font-size: 1.7rem;
+      font-weight: 800;
+      color: var(--white);
+      letter-spacing: -0.5px;
+    }
+
+    .logo span { color: var(--primary); }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+    }
+
+    .nav-links a {
+      color: #ccc;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color 0.25s;
+    }
+
+    .nav-links a:hover { color: var(--primary); }
+
+    .nav-cta {
+      background: var(--primary);
+      color: var(--white) !important;
+      padding: 10px 22px;
+      border-radius: 50px;
+      font-weight: 700 !important;
+      transition: background 0.25s !important;
+    }
+
+    .nav-cta:hover { background: var(--primary-d) !important; }
+
+    /* ---------- HERO ---------- */
+    .hero {
+      background: linear-gradient(135deg, var(--dark) 0%, var(--mid) 60%, #0f3460 100%);
+      padding: 100px 0 80px;
+      text-align: center;
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(255,107,0,0.15) 0%, transparent 70%);
+      top: -100px; left: -100px;
+      pointer-events: none;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(255,107,0,0.10) 0%, transparent 70%);
+      bottom: -100px; right: -100px;
+      pointer-events: none;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255,107,0,0.18);
+      color: var(--primary);
+      border: 1px solid rgba(255,107,0,0.4);
+      padding: 6px 18px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 22px;
+      letter-spacing: 0.5px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 span { color: var(--primary); }
+
+    .hero p {
+      font-size: 1.15rem;
+      color: #b0b8cc;
+      max-width: 600px;
+      margin: 0 auto 36px;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: var(--white);
+      padding: 14px 34px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: all 0.25s;
+      box-shadow: 0 4px 20px rgba(255,107,0,0.35);
+    }
+
+    .btn-primary:hover { background: var(--primary-d); transform: translateY(-2px); }
+
+    .btn-outline {
+      border: 2px solid rgba(255,255,255,0.35);
+      color: var(--white);
+      padding: 14px 34px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.25s;
+    }
+
+    .btn-outline:hover { border-color: var(--primary); color: var(--primary); }
+
+    /* ---------- STATS ---------- */
+    .stats {
+      background: var(--light);
+      padding: 50px 0;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 24px;
+      text-align: center;
+    }
+
+    .stat-item h3 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    .stat-item p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    /* ---------- CATEGORIES ---------- */
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-header h2 {
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 800;
+      color: var(--dark);
+      margin-bottom: 12px;
+    }
+
+    .section-header p {
+      color: var(--muted);
+      font-size: 1rem;
+      max-width: 540px;
+      margin: 0 auto;
+    }
+
+    .tag {
+      display: inline-block;
+      background: rgba(255,107,0,0.1);
+      color: var(--primary);
+      padding: 4px 14px;
+      border-radius: 50px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+
+    .cat-card {
+      background: var(--white);
+      border: 1.5px solid #eee;
+      border-radius: var(--radius);
+      padding: 32px 20px;
+      text-align: center;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+
+    .cat-card:hover {
+      border-color: var(--primary);
+      box-shadow: 0 8px 30px rgba(255,107,0,0.15);
+      transform: translateY(-4px);
+    }
+
+    .cat-icon {
+      font-size: 2.8rem;
+      margin-bottom: 14px;
+    }
+
+    .cat-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--dark);
+    }
+
+    .cat-card p {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+
+    /* ---------- FEATURES ---------- */
+    .features { background: var(--light); padding: 80px 0; }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 28px;
+    }
+
+    .feat-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 32px 28px;
+      box-shadow: var(--shadow);
+      border-top: 4px solid var(--primary);
+      transition: transform 0.3s;
+    }
+
+    .feat-card:hover { transform: translateY(-4px); }
+
+    .feat-icon { font-size: 2.2rem; margin-bottom: 16px; }
+
+    .feat-card h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 10px;
+    }
+
+    .feat-card p { color: var(--muted); font-size: 0.93rem; }
+
+    /* ---------- GLOBAL REACH (BACKLINKS) ---------- */
+    .global { padding: 80px 0; }
+
+    .regions-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    .region-card {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--white);
+      border: 1.5px solid #e8e8e8;
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      transition: all 0.25s;
+    }
+
+    .region-card:hover {
+      border-color: var(--primary);
+      background: rgba(255,107,0,0.04);
+      transform: translateX(4px);
+      box-shadow: 0 4px 16px rgba(255,107,0,0.1);
+    }
+
+    .region-flag { font-size: 1.8rem; }
+
+    .region-info strong {
+      display: block;
+      font-size: 0.95rem;
+      color: var(--dark);
+      font-weight: 700;
+    }
+
+    .region-info span {
+      font-size: 0.78rem;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    /* ---------- HOW IT WORKS ---------- */
+    .how { background: var(--light); padding: 80px 0; }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 28px;
+      counter-reset: steps;
+    }
+
+    .step-card {
+      text-align: center;
+      padding: 36px 24px;
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      position: relative;
+    }
+
+    .step-num {
+      width: 52px; height: 52px;
+      background: var(--primary);
+      color: var(--white);
+      border-radius: 50%;
+      font-size: 1.4rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+    }
+
+    .step-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 10px;
+    }
+
+    .step-card p { font-size: 0.9rem; color: var(--muted); }
+
+    /* ---------- CTA BANNER ---------- */
+    .cta-banner {
+      background: linear-gradient(135deg, var(--primary) 0%, #ff9a3c 100%);
+      padding: 72px 0;
+      text-align: center;
+      color: var(--white);
+    }
+
+    .cta-banner h2 {
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+
+    .cta-banner p {
+      font-size: 1.1rem;
+      opacity: 0.92;
+      margin-bottom: 32px;
+      max-width: 520px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .btn-white {
+      background: var(--white);
+      color: var(--primary);
+      padding: 14px 38px;
+      border-radius: 50px;
+      font-weight: 800;
+      font-size: 1rem;
+      display: inline-block;
+      transition: all 0.25s;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+
+    .btn-white:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(0,0,0,0.2); }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      background: var(--dark);
+      color: #aaa;
+      padding: 60px 0 28px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 36px;
+      margin-bottom: 40px;
+    }
+
+    .footer-brand .logo { margin-bottom: 14px; }
+
+    .footer-brand p { font-size: 0.88rem; line-height: 1.8; }
+
+    .footer-col h4 {
+      color: var(--white);
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .footer-col ul li { margin-bottom: 10px; }
+
+    .footer-col ul li a {
+      color: #999;
+      font-size: 0.88rem;
+      transition: color 0.25s;
+    }
+
+    .footer-col ul li a:hover { color: var(--primary); }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.07);
+      padding-top: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 0.82rem;
+    }
+
+    .footer-bottom a { color: var(--primary); }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 900px) {
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .hero { padding: 70px 0 60px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav aria-label="Main Navigation">
+    <div class="container nav-inner">
+      <a href="https://indiarentalz.com" class="logo" rel="dofollow">India<span>Rentalz</span></a>
+      <ul class="nav-links">
+        <li><a href="https://indiarentalz.com/#categories">Categories</a></li>
+        <li><a href="https://indiarentalz.com/#how-it-works">How It Works</a></li>
+        <li><a href="https://indiarentalz.com/#global">Global Reach</a></li>
+        <li><a href="https://indiarentalz.com" class="nav-cta" rel="dofollow">List Your Rental</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <header class="hero" id="home">
+    <div class="container">
+      <div class="hero-badge">🇮🇳 India's #1 Rental Marketplace</div>
+      <h1>Rent <span>Anything</span> You Need<br />Across India &amp; Beyond</h1>
+      <p>Bikes, cars, homes, electronics, furniture — find verified rental listings at unbeatable prices on <strong><a href="https://indiarentalz.com" rel="dofollow" style="color:var(--primary)">indiarentalz.com</a></strong>.</p>
+      <div class="hero-btns">
+        <a href="https://indiarentalz.com" class="btn-primary" rel="dofollow">🔍 Browse Rentals</a>
+        <a href="https://indiarentalz.com" class="btn-outline" rel="dofollow">Post Your Listing Free</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== STATS ========== -->
+  <section class="stats" aria-label="Platform Statistics">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <h3>50,000+</h3>
+          <p>Active Listings</p>
+        </div>
+        <div class="stat-item">
+          <h3>200+</h3>
+          <p>Cities Covered</p>
+        </div>
+        <div class="stat-item">
+          <h3>20</h3>
+          <p>Global Regions</p>
+        </div>
+        <div class="stat-item">
+          <h3>1 Lakh+</h3>
+          <p>Happy Renters</p>
+        </div>
+        <div class="stat-item">
+          <h3>4.8 ★</h3>
+          <p>Average Rating</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CATEGORIES ========== -->
+  <section class="section" id="categories" aria-label="Rental Categories">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Categories</span>
+        <h2>What Would You Like to Rent?</h2>
+        <p>Browse hundreds of categories on <a href="https://indiarentalz.com" rel="dofollow" style="color:var(--primary); font-weight:700;">IndiaRentalz.com</a> — all verified, all affordable.</p>
+      </div>
+      <div class="categories-grid">
+        <a href="https://indiarentalz.com" class="cat-card" rel="dofollow">
+          <div class="cat-icon">🏠</div>
+          <h3>Homes &amp; Apartments</h3>
+          <p>PG, flats, villas</p>
+        </a>
+        <a href="https://indiarentalz.com" class="cat-card" rel="dofollow">
+          <div class="cat-icon">🏍️</div>
+          <h3>Bikes &amp; Scooters</h3>
+          <p>Short &amp; long term</p>
+        </a>
+        <a href="https://indiarentalz.com" class="cat-card" rel="dofollow">
+          <div class="cat-icon">🚗</div>
+          <h3>Cars</h3>
+          <p>Self-drive &amp; chauffeur</p>
+        </a>
+        <a href="https://indiarentalz.com" class="cat-card" rel="dofollow">
+          <div class="cat-icon">💻</div>
+          <h3>Electronics</h3>
+          <p>Laptops, cameras &amp; more</p>
+        </a>
+        <a href="https://indiarentalz.com" class="cat-card" rel="dofollow">
+          <div class="cat-icon">🛋️</div>
+          <h3>Furniture</h3>
+          <p>Office &amp; home</p>
+        </a>
+        <a href="https://indiarentalz.com" class="cat-card" rel="dofollow">
+          <div class="cat-icon">⚙️</div>
+          <h3>Equipment</h3>
+          <p>Construction &amp; events</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURES ========== -->
+  <section class="features" id="features" aria-label="Why Choose IndiaRentalz">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Why Us</span>
+        <h2>Why Choose IndiaRentalz?</h2>
+        <p>We make renting simple, safe and affordable for everyone in India and across the globe.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feat-card">
+          <div class="feat-icon">✅</div>
+          <h3>100% Verified Listings</h3>
+          <p>Every listing on <a href="https://indiarentalz.com" rel="dofollow" style="color:var(--primary);">IndiaRentalz</a> is manually reviewed for authenticity and accuracy.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">💰</div>
+          <h3>Best Rental Prices</h3>
+          <p>Compare thousands of rental options and find the most competitive rates across all categories.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">📱</div>
+          <h3>Easy Mobile Experience</h3>
+          <p>List or discover rentals in minutes from any device. Fully optimized for mobile users.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">🔒</div>
+          <h3>Secure Transactions</h3>
+          <p>Your payments and personal data are protected with industry-standard encryption.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">🤝</div>
+          <h3>Owner &amp; Renter Support</h3>
+          <p>Dedicated support team available 7 days a week to resolve any dispute or query instantly.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">🌍</div>
+          <h3>Global Visibility</h3>
+          <p>Your Indian rental listings reach NRI audiences, expats, and tourists from 20+ countries.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GLOBAL REACH — ALL 20 BACKLINKS ========== -->
+  <section class="global" id="global" aria-label="Global Reach of IndiaRentalz">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Global Reach</span>
+        <h2>IndiaRentalz is Recognized Worldwide</h2>
+        <p>Our platform serves users from over 20 countries. Discover Indian rental listings no matter where you are in the world.</p>
+      </div>
+      <div class="regions-grid">
+
+        <a href="https://www.google.com/url?q=https%3A%2F%2Findiarentalz.com"
+           class="region-card" rel="dofollow" title="IndiaRentalz – USA">
+          <span class="region-flag">🇺🇸</span>
+          <div class="region-info">
+            <strong>United States</strong>
+            <span>indiarentalz.com</span>
+          </div>
+        </a>
+
+        <a href="https://www.google.co.in/url?q=https%3A%2F%2Findiarentalz.com"
+           class="region-card" rel="dofollow" title="IndiaRentalz – India">
+          <span class="region-flag">🇮🇳</span>
+          <div class="region-info">
+            <strong>India</strong>
+            <span>indiarentalz.com</span>
+          </div>
+        </a>
+
+        <a href="https://www.google.co.uk/url?q=https%3A%2F%2Findiarentalz.com"
+           class="region-card" rel="dofollow" title="IndiaRentalz – United Kingdom">
+          <span class="region-flag">🇬🇧</span>
+          <div class="region-info">
+            <strong>United Kingdom</strong>
+            <span>indiarentalz.com</span>
+          </div>
+        </a>
+
+        <a href="https://www.google.ca/url?q=https%3A%2F%2Findiarentalz.com"
+           class="region-card" rel="dofollow" title="IndiaRentalz – Canada">
+          <span class="region-flag">🇨🇦</span>
+          <div class="region-info">
+            <strong>Canada</strong>
+            <span>indiarentalz.com</span>
+          </div>
+        </a>
+
+        <a href="https://www.google.com.au/url?q=https%3A%2F%2Findiarentalz.com"
+           class="region-card" rel="dofollow" title="IndiaRentalz – Australia">
+          <span class="region-flag">🇦🇺</span>
+          <div class="region-info">
+            <strong>Australia</strong>
+            <span>indiarentalz.com</span>
+          </div>
+        </a>
+
+        <a href="https://www.google.de/url?q=https%3A%2F%2Findiarentalz.com"
+           class="region-card" rel="dofollow" title="IndiaRentalz – Germany">
+          <span class="region-flag">🇩🇪</span>
+          <div class="region-info">
+            <strong>Germany</strong>
+            <span>indiarentalz.com</span>
+          </div>
+        </a>
+
+        <a href="https://www.google.fr/url?q=https%3A%2F%2Findiarentalz.com"
+           class="region-card" rel="dofollow" title="IndiaRentalz – France">
+          <span class="region-flag">🇫🇷</span>
+          <div class="region-info">
+            <strong>France</strong>
+            <span>indiarentalz.com</span>
+          </div>
+        </a>
+
+        <a href="https://www.google.it/url?q=https%3A%2F%2Findiarentalz.com"
+           class="region-card" rel="dofollow" title="IndiaRentalz – Italy">
+          <span class="region-flag">🇮🇹</span>
+          <div class="region-info">
+            <strong>Italy</strong>
+            <span>indiarentalz.com</span>
+          </div>
+        </a>
+
+        <a href="https://www.google.es/url?q=https%3A%2F%2Findiarentalz.com"
+           class="region-card" rel="dofollow" title="IndiaRentalz – Spain">
+          <span class="region-flag">🇪🇸</span>
+          <div class="region-info">
+            <strong>Spain</strong>
+            <span>indiarentalz.com</span>
+          </div>
+        </a>
+
+        <a href="https://www.google.nl/url?q=https%3A%2F%2Findiarentalz.com"
+           class="region-card" rel="dofollow" title="IndiaRentalz – Netherlands">
+          <span class="region-flag">🇳🇱</span>
+          <div class="region-info">
+            <strong>Netherlands</strong>
+            <span>indiarentalz.com</span>
+          </div>
+        </a>
+
+        <a href="https://www.google.com.br/url?q=https%3A%2F%2Findiarentalz.com"
+           class="region-card" rel="dofollow" title="IndiaRentalz – Brazil">
+          <span class="region-flag">🇧🇷</span>
+          <div class="region-info">
+            <strong>Brazil</strong>
+            <span>indiarentalz.com</span>
+          </div>
+        </a>
+
+        <a href="https://www.google.co.jp/url?q=https%3A%2F%2Findiarentalz.com"
+           class="region-card" rel="dofollow" title="IndiaRentalz – Japan">
+          <span class="region-flag">🇯🇵</span>
+          <div class="region-info">
+            <strong>Japan</strong>
+            <span>indiarentalz.com</span>
+          </div>
+        </a>
+
+        <a href="https://www.google.co.kr/url?q=https%3A%2F%2Findiarentalz.com"
+           class="region-card" rel="dofollow" title="IndiaRentalz – South Korea">
+          <span class="region-flag">🇰🇷</span>
+          <div class="region-info">
+            <strong>South Korea</strong>
+            <span>indiarentalz.com</span>
+          </div>
+        </a>
+
+        <a href="https://www.google.com.sg/url?q=https%3A%2F%2Findiarentalz.com"
+           class="region-card" rel="dofollow" title="IndiaRentalz – Singapore">
+          <span class="region-flag">🇸🇬</span>
+          <div class="region-info">
+            <strong>Singapore</strong>
+            <span>indiarentalz.com</span>
+          </div>
+        </a>
+
+        <a href="https://www.google.ae/url?q=https%3A%2F%2Findiarentalz.com"
+           class="region-card" rel="dofollow" title="IndiaRentalz – UAE">
+          <span class="region-flag">🇦🇪</span>
+          <div class="region-info">
+            <strong>UAE</strong>
+            <span>indiarentalz.com</span>
+          </div>
+        </a>
+
+        <a href="https://www.google.co.za/url?q=https%3A%2F%2Findiarentalz.com"
+           class="region-card" rel="dofollow" title="IndiaRentalz – South Africa">
+          <span class="region-flag">🇿🇦</span>
+          <div class="region-info">
+            <strong>South Africa</strong>
+            <span>indiarentalz.com</span>
+          </div>
+        </a>
+
+        <a href="https://www.google.com.mx/url?q=https%3A%2F%2Findiarentalz.com"
+           class="region-card" rel="dofollow" title="IndiaRentalz – Mexico">
+          <span class="region-flag">🇲🇽</span>
+          <div class="region-info">
+            <strong>Mexico</strong>
+            <span>indiarentalz.com</span>
+          </div>
+        </a>
+
+        <a href="https://www.google.ru/url?q=https%3A%2F%2Findiarentalz.com"
+           class="region-card" rel="dofollow" title="IndiaRentalz – Russia">
+          <span class="region-flag">🇷🇺</span>
+          <div class="region-info">
+            <strong>Russia</strong>
+            <span>indiarentalz.com</span>
+          </div>
+        </a>
+
+        <a href="https://www.google.com.tr/url?q=https%3A%2F%2Findiarentalz.com"
+           class="region-card" rel="dofollow" title="IndiaRentalz – Turkey">
+          <span class="region-flag">🇹🇷</span>
+          <div class="region-info">
+            <strong>Turkey</strong>
+            <span>indiarentalz.com</span>
+          </div>
+        </a>
+
+        <a href="https://www.google.com.my/url?q=https%3A%2F%2Findiarentalz.com"
+           class="region-card" rel="dofollow" title="IndiaRentalz – Malaysia">
+          <span class="region-flag">🇲🇾</span>
+          <div class="region-info">
+            <strong>Malaysia</strong>
+            <span>indiarentalz.com</span>
+          </div>
+        </a>
+
+      </div><!-- /regions-grid -->
+    </div>
+  </section>
+
+  <!-- ========== HOW IT WORKS ========== -->
+  <section class="how" id="how-it-works" aria-label="How IndiaRentalz Works">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Process</span>
+        <h2>How IndiaRentalz Works</h2>
+        <p>Get started with your rental in 4 simple steps on <a href="https://indiarentalz.com" rel="dofollow" style="color:var(--primary);font-weight:700;">indiarentalz.com</a>.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">1</div>
+          <h3>Search a Category</h3>
+          <p>Browse by type, city, or price range to find exactly what you need to rent.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">2</div>
+          <h3>Compare Listings</h3>
+          <p>Read reviews, compare prices, and check availability across multiple providers.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">3</div>
+          <h3>Book Securely</h3>
+          <p>Confirm your booking with our secure payment system — no hidden charges.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">4</div>
+          <h3>Enjoy Your Rental</h3>
+          <p>Pick up or get delivery. Rate your experience and help the community grow.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA BANNER ========== -->
+  <section class="cta-banner" aria-label="Call To Action">
+    <div class="container">
+      <h2>Ready to Rent or List Something Today?</h2>
+      <p>Join over 1 lakh satisfied users who trust IndiaRentalz for all their rental needs across India and worldwide.</p>
+      <a href="https://indiarentalz.com" class="btn-white" rel="dofollow">Visit IndiaRentalz Now →</a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer aria-label="Site Footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="https://indiarentalz.com" class="logo" rel="dofollow">India<span>Rentalz</span></a>
+          <p>India's most trusted rental marketplace. Connecting renters and owners across 200+ cities and 20+ countries since 2020.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="https://indiarentalz.com" rel="dofollow">Home Rentals</a></li>
+            <li><a href="https://indiarentalz.com" rel="dofollow">Bike Rentals</a></li>
+            <li><a href="https://indiarentalz.com" rel="dofollow">Car Rentals</a></li>
+            <li><a href="https://indiarentalz.com" rel="dofollow">Electronics</a></li>
+            <li><a href="https://indiarentalz.com" rel="dofollow">Furniture</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="https://indiarentalz.com" rel="dofollow">About Us</a></li>
+            <li><a href="https://indiarentalz.com" rel="dofollow">Blog</a></li>
+            <li><a href="https://indiarentalz.com" rel="dofollow">Careers</a></li>
+            <li><a href="https://indiarentalz.com" rel="dofollow">Press</a></li>
+            <li><a href="https://indiarentalz.com" rel="dofollow">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="https://indiarentalz.com" rel="dofollow">Privacy Policy</a></li>
+            <li><a href="https://indiarentalz.com" rel="dofollow">Terms of Service</a></li>
+            <li><a href="https://indiarentalz.com" rel="dofollow">Cookie Policy</a></li>
+            <li><a href="https://indiarentalz.com" rel="dofollow">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 <a href="https://indiarentalz.com" rel="dofollow">IndiaRentalz.com</a>. All Rights Reserved.</p>
+        <p>Built with ❤️ for India &amp; the World</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
